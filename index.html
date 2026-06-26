@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kazira — Luxury, Without Excess</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root { --paper:#e9e7e2; --ink:#1a1a1a; --line:#c9c6bf; }
+  body { font-family:'Jost',sans-serif; background:var(--paper); color:var(--ink); }
+  .serif { font-family:'Cormorant Garamond',serif; }
+  .track { letter-spacing:.18em; }
+  .track-wide { letter-spacing:.28em; }
+  a { text-decoration:none; }
+  .hover-underline { background-image:linear-gradient(currentColor,currentColor); background-size:0 1px; background-repeat:no-repeat; background-position:0 100%; transition:background-size .35s ease; }
+  .hover-underline:hover { background-size:100% 1px; }
+  .prod-img { mix-blend-mode:multiply; }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- Nav -->
+<header class="sticky top-0 z-40 bg-[#e9e7e2]/90 backdrop-blur-sm border-b border-[var(--line)]">
+  <nav class="max-w-7xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
+    <div class="flex items-center gap-10">
+      <a href="#top" class="serif text-2xl tracking-[0.3em] font-medium">KAZIRA</a>
+      <div class="hidden md:flex gap-8 text-[11px] uppercase track text-[var(--ink)]/80">
+        <a href="#top" class="hover-underline">Home</a>
+        <a href="#catalog" class="hover-underline">Catalogue</a>
+        <a href="#about" class="hover-underline">About</a>
+        <a href="https://wa.me/919394470439" target="_blank" class="hover-underline">Contact</a>
+      </div>
+    </div>
+    <button onclick="toggleCart()" class="text-[11px] uppercase track flex items-center gap-2">
+      Cart <span id="cart-count" class="inline-flex items-center justify-center w-5 h-5 rounded-full border border-[var(--ink)] text-[10px]">0</span>
+    </button>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section id="top" class="relative">
+  <div class="w-full h-[78vh] min-h-[460px] bg-cover bg-center relative" style="background-image:url('images/banner.jpg')">
+    <div class="absolute inset-0 bg-black/15"></div>
+    <div class="relative max-w-7xl mx-auto px-6 md:px-10 h-full flex flex-col justify-center">
+      <h1 class="serif text-white text-5xl md:text-7xl leading-[1.05] max-w-2xl font-light">Luxury,<br>Without Excess.</h1>
+      <p class="text-white/90 mt-6 max-w-md text-sm md:text-base font-light leading-relaxed">Thoughtfully crafted home essentials that transform everyday care into a refined ritual.</p>
+      <a href="#catalog" class="mt-8 inline-block self-start bg-[var(--ink)] text-[var(--paper)] text-[11px] uppercase track px-8 py-3.5 hover:bg-black transition">Explore the Collection</a>
+    </div>
+  </div>
+</section>
+
+<!-- Intro statement -->
+<section class="max-w-3xl mx-auto px-6 py-24 md:py-32 text-center">
+  <p class="serif text-2xl md:text-3xl leading-[1.5] font-light">All of our formulations—whether their purpose is to cleanse, nourish or refresh—are intended to enrich otherwise ordinary moments at home.</p>
+</section>
+
+<!-- Catalogue -->
+<section id="catalog" class="max-w-7xl mx-auto px-6 md:px-10 pb-12">
+  <div class="border-t border-[var(--line)] pt-10 mb-12 flex items-baseline justify-between">
+    <h2 class="serif text-3xl md:text-4xl font-light">The Collection</h2>
+    <span class="text-[11px] uppercase track text-[var(--ink)]/60">Three formulations</span>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
+
+    <!-- Product -->
+    <article class="group">
+      <div class="aspect-[4/5] bg-[#dedbd4] overflow-hidden flex items-center justify-center mb-6">
+        <img src="images/dishwash.jpg" alt="Kazira Dishwash Liquid" class="w-full h-full object-cover">
+      </div>
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <h3 class="serif text-xl leading-tight">Dishwash Liquid</h3>
+          <p class="text-xs text-[var(--ink)]/60 mt-1 font-light">Cuts grease effortlessly · 500 ml</p>
+        </div>
+        <span class="text-sm whitespace-nowrap">₹449</span>
+      </div>
+      <div class="mt-4 flex gap-3">
+        <button onclick="addToCart('Dishwash Liquid',449)" class="flex-1 border border-[var(--ink)] text-[10px] uppercase track py-3 hover:bg-[var(--ink)] hover:text-[var(--paper)] transition">Add to cart</button>
+        <button onclick="buyNow('Dishwash Liquid',449)" class="flex-1 bg-[var(--ink)] text-[var(--paper)] text-[10px] uppercase track py-3 hover:bg-black transition">Buy now</button>
+      </div>
+    </article>
+
+    <article class="group">
+      <div class="aspect-[4/5] bg-[#dedbd4] overflow-hidden flex items-center justify-center mb-6">
+        <img src="images/handwash.jpg" alt="Kazira Rose & Pearl Aromatic Hand Wash" class="w-full h-full object-cover">
+      </div>
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <h3 class="serif text-xl leading-tight">Rose &amp; Pearl Hand Wash</h3>
+          <p class="text-xs text-[var(--ink)]/60 mt-1 font-light">Rose extract &amp; pearl essence · 250 ml</p>
+        </div>
+        <span class="text-sm whitespace-nowrap">₹399</span>
+      </div>
+      <div class="mt-4 flex gap-3">
+        <button onclick="addToCart('Rose & Pearl Hand Wash',399)" class="flex-1 border border-[var(--ink)] text-[10px] uppercase track py-3 hover:bg-[var(--ink)] hover:text-[var(--paper)] transition">Add to cart</button>
+        <button onclick="buyNow('Rose & Pearl Hand Wash',399)" class="flex-1 bg-[var(--ink)] text-[var(--paper)] text-[10px] uppercase track py-3 hover:bg-black transition">Buy now</button>
+      </div>
+    </article>
+
+    <article class="group">
+      <div class="aspect-[4/5] bg-[#dedbd4] overflow-hidden flex items-center justify-center mb-6">
+        <img src="images/floor.jpg" alt="Kazira Luxury Floor Cleaner" class="w-full h-full object-cover">
+      </div>
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <h3 class="serif text-xl leading-tight">Luxury Floor Cleaner</h3>
+          <p class="text-xs text-[var(--ink)]/60 mt-1 font-light">With natural essential oils · 1 Litre</p>
+        </div>
+        <span class="text-sm whitespace-nowrap">₹599</span>
+      </div>
+      <div class="mt-4 flex gap-3">
+        <button onclick="addToCart('Luxury Floor Cleaner',599)" class="flex-1 border border-[var(--ink)] text-[10px] uppercase track py-3 hover:bg-[var(--ink)] hover:text-[var(--paper)] transition">Add to cart</button>
+        <button onclick="buyNow('Luxury Floor Cleaner',599)" class="flex-1 bg-[var(--ink)] text-[var(--paper)] text-[10px] uppercase track py-3 hover:bg-black transition">Buy now</button>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- Editorial feature 1 -->
+<section class="mt-24 grid grid-cols-1 md:grid-cols-2 items-stretch">
+  <div class="min-h-[420px] bg-cover bg-center" style="background-image:url('images/handwash.jpg')"></div>
+  <div class="bg-[#dedbd4] flex items-center">
+    <div class="px-8 md:px-16 py-20 max-w-md">
+      <span class="text-[11px] uppercase track-wide text-[var(--ink)]/60">Rose &amp; Pearl</span>
+      <h3 class="serif text-3xl md:text-4xl font-light mt-4 leading-tight">A quiet ritual for the hands</h3>
+      <p class="text-sm font-light leading-relaxed mt-5 text-[var(--ink)]/80">A gentle, low-foaming cleanser enriched with rose extract and pearl essence—leaving skin soft, scented and unhurried.</p>
+      <a href="#catalog" class="inline-block mt-7 text-[11px] uppercase track border-b border-[var(--ink)] pb-1 hover-underline">Discover the formulation</a>
+    </div>
+  </div>
+</section>
+
+<!-- Editorial feature 2 (reversed) -->
+<section class="grid grid-cols-1 md:grid-cols-2 items-stretch">
+  <div class="bg-[#dedbd4] flex items-center order-2 md:order-1">
+    <div class="px-8 md:px-16 py-20 max-w-md ml-auto">
+      <span class="text-[11px] uppercase track-wide text-[var(--ink)]/60">For the home</span>
+      <h3 class="serif text-3xl md:text-4xl font-light mt-4 leading-tight">Strength, refined</h3>
+      <p class="text-sm font-light leading-relaxed mt-5 text-[var(--ink)]/80">Performance-driven home care, calibrated to deliver pristine cleanliness with a clean, minimalist sensory accent—nothing more than needed.</p>
+      <a href="#catalog" class="inline-block mt-7 text-[11px] uppercase track border-b border-[var(--ink)] pb-1 hover-underline">Browse the collection</a>
+    </div>
+  </div>
+  <div class="min-h-[420px] bg-cover bg-center order-1 md:order-2" style="background-image:url('images/floor.jpg')"></div>
+</section>
+
+<!-- About -->
+<section id="about" class="max-w-3xl mx-auto px-6 py-28 text-center">
+  <span class="text-[11px] uppercase track-wide text-[var(--ink)]/60">Our Identity</span>
+  <h3 class="serif text-3xl md:text-4xl font-light mt-4 mb-8">Designed for sophistication</h3>
+  <p class="text-base font-light leading-relaxed text-[var(--ink)]/80 mb-5">Kazira redefines the premium domestic landscape by merging potent, performance-driven formulations with restrained, considered design.</p>
+  <p class="text-base font-light leading-relaxed text-[var(--ink)]/80">Every solution under the Kazira seal is meticulously calibrated to deliver pristine cleanliness, layered with a clean, minimalist sensory accent.</p>
+</section>
+
+<!-- Footer -->
+<footer class="border-t border-[var(--line)] bg-[#e3e0da]">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 py-16 grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
+    <div class="md:col-span-2">
+      <div class="serif text-2xl tracking-[0.3em]">KAZIRA</div>
+      <p class="text-[11px] uppercase track text-[var(--ink)]/60 mt-2">Luxury, Without Excess</p>
+    </div>
+    <div>
+      <h4 class="text-[11px] uppercase track text-[var(--ink)]/60 mb-4">Customer Care</h4>
+      <ul class="space-y-2 font-light">
+        <li><button onclick="showPolicy('delivery')" class="hover-underline">Delivery</button></li>
+        <li><button onclick="showPolicy('refund')" class="hover-underline">Returns &amp; Refunds</button></li>
+        <li><button onclick="showPolicy('privacy')" class="hover-underline">Privacy Policy</button></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-[11px] uppercase track text-[var(--ink)]/60 mb-4">Contact</h4>
+      <ul class="space-y-2 font-light">
+        <li><a href="https://wa.me/919394470439" target="_blank" class="hover-underline">WhatsApp Support</a></li>
+        <li class="text-[var(--ink)]/70">+91 93944 70439</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-[var(--line)] py-5 text-center text-[11px] uppercase track text-[var(--ink)]/50">&copy; 2026 Kazira. All rights reserved.</div>
+</footer>
+
+<!-- Cart drawer -->
+<div id="cart-overlay" onclick="toggleCart()" class="fixed inset-0 bg-black/30 hidden z-40"></div>
+<aside id="cart-sidebar" class="fixed inset-y-0 right-0 w-full max-w-sm bg-[var(--paper)] z-50 translate-x-full transition-transform duration-300 flex flex-col border-l border-[var(--line)]">
+  <div class="px-6 py-5 border-b border-[var(--line)] flex items-center justify-between">
+    <h3 class="text-[11px] uppercase track">Your Cart</h3>
+    <button onclick="toggleCart()" class="text-xl leading-none">&times;</button>
+  </div>
+  <div id="cart-items" class="flex-1 overflow-y-auto p-6 space-y-5">
+    <p class="text-[var(--ink)]/50 text-center py-10 text-sm font-light">Your cart is empty.</p>
+  </div>
+  <div class="p-6 border-t border-[var(--line)]">
+    <div class="flex justify-between items-baseline mb-5">
+      <span class="text-[11px] uppercase track text-[var(--ink)]/60">Subtotal</span>
+      <span id="cart-subtotal" class="serif text-xl">₹0.00</span>
+    </div>
+    <button onclick="checkout()" class="w-full bg-[var(--ink)] text-[var(--paper)] py-4 text-[11px] uppercase track hover:bg-black transition">Checkout via Razorpay</button>
+  </div>
+</aside>
+
+<!-- Policy modal -->
+<div id="policy-modal" class="fixed inset-0 bg-black/40 hidden z-50 items-center justify-center p-4">
+  <div class="bg-[var(--paper)] w-full max-w-xl max-h-[80vh] flex flex-col">
+    <div class="px-6 py-5 border-b border-[var(--line)] flex items-center justify-between">
+      <h3 id="policy-title" class="serif text-2xl font-light"></h3>
+      <button onclick="closePolicy()" class="text-xl leading-none">&times;</button>
+    </div>
+    <div id="policy-content" class="p-6 overflow-y-auto text-sm font-light leading-relaxed text-[var(--ink)]/80 space-y-4"></div>
+  </div>
+</div>
+
+<a href="https://wa.me/919394470439?text=Hello%20Kazira%2C%20I%20have%20an%20enquiry." target="_blank" class="fixed bottom-6 right-6 z-40 bg-[var(--ink)] text-[var(--paper)] w-12 h-12 rounded-full flex items-center justify-center hover:bg-black transition" aria-label="WhatsApp">
+  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.454L0 24zm6.59-4.846c1.6.95 3.198 1.451 4.82 1.452 5.518 0 10.006-4.486 10.01-10.002.002-2.673-1.036-5.185-2.924-7.076-1.888-1.89-4.403-2.93-7.075-2.931-5.52 0-10.008 4.488-10.013 10.006-.001 1.737.479 3.427 1.39 4.916L1.084 22.9l6.563-1.722zm10.702-4.664c.292.146.486.244.56.365.074.122.074.707-.17 1.4-.244.693-1.436 1.353-1.972 1.401-.536.048-1.072.073-3.602-.924-2.529-.997-4.148-3.56-4.27-3.722-.122-.162-.973-1.293-.973-2.467s.608-1.754.827-1.997c.22-.243.486-.304.648-.304.162 0 .324.001.466.008.147.006.345-.057.542.42.197.477.674 1.643.734 1.765.061.122.1.264.018.427-.083.162-.162.264-.325.466-.162.197-.345.441-.493.592-.162.162-.33.339-.142.66.188.32.833 1.36 1.787 2.207 1.156 1.006 1.942 1.303 2.628 1.614.197.09.387.05.531-.107.162-.178.674-.787.854-1.057.18-.27.36-.226.608-.135z"/></svg>
+</a>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+  let cart = [];
+  const RAZORPAY_KEY = "YOUR_RAZORPAY_KEY_ID";
+  const policyData = {
+    privacy:{title:"Privacy Policy",text:"<p>At Kazira, we respect your privacy. Data collected during checkout is protected under industry-standard transport-layer security.</p><p>We do not store card details on our servers. Information provided is used solely to fulfil your order alongside our logistics partners.</p>"},
+    refund:{title:"Returns & Refunds",text:"<p>Because Kazira produces small-batch formulations, we maintain strict hygiene standards. If items arrive with broken seals or damaged bottles, you are entitled to a full replacement or refund.</p><p>Please notify us within 7 days of delivery via WhatsApp, with photographs attached.</p>"},
+    delivery:{title:"Delivery",text:"<p>All confirmed orders are dispatched promptly. We aim to deliver within a <strong>3 working-day</strong> window across serviceable zones.</p><p>Tracking links are shared as soon as the carrier collects your package.</p>"}
+  };
+  function toggleCart(){document.getElementById('cart-sidebar').classList.toggle('translate-x-full');document.getElementById('cart-overlay').classList.toggle('hidden');}
+  function showPolicy(t){document.getElementById('policy-title').innerText=policyData[t].title;document.getElementById('policy-content').innerHTML=policyData[t].text;const m=document.getElementById('policy-modal');m.classList.remove('hidden');m.classList.add('flex');}
+  function closePolicy(){const m=document.getElementById('policy-modal');m.classList.add('hidden');m.classList.remove('flex');}
+  function addToCart(n,p){const i=cart.find(x=>x.name===n);if(i)i.quantity++;else cart.push({name:n,price:p,quantity:1});updateCartUI();toggleCart();}
+  function buyNow(n,p){cart=[{name:n,price:p,quantity:1}];updateCartUI();checkout();}
+  function updateCartUI(){const c=document.getElementById('cart-items');let t=0,s=0;
+    if(!cart.length){c.innerHTML='<p class="text-[var(--ink)]/50 text-center py-10 text-sm font-light">Your cart is empty.</p>';}
+    else{c.innerHTML=cart.map((it,idx)=>{t+=it.quantity;s+=it.price*it.quantity;return `<div class="flex justify-between items-start gap-4 border-b border-[var(--line)] pb-4"><div><h4 class="serif text-lg leading-tight">${it.name}</h4><span class="text-xs text-[var(--ink)]/60 font-light">₹${it.price} × ${it.quantity}</span></div><div class="text-right"><div class="text-sm">₹${it.price*it.quantity}</div><button onclick="removeItem(${idx})" class="text-[10px] uppercase track text-[var(--ink)]/50 hover:text-[var(--ink)] mt-1">Remove</button></div></div>`;}).join('');}
+    document.getElementById('cart-count').innerText=t;document.getElementById('cart-subtotal').innerText='₹'+s.toFixed(2);}
+  function removeItem(i){cart.splice(i,1);updateCartUI();}
+  function checkout(){if(!cart.length)return alert("Your cart is empty.");
+    if(RAZORPAY_KEY==="YOUR_RAZORPAY_KEY_ID"){alert("Razorpay isn't configured yet. Add your Key ID in index.html (RAZORPAY_KEY) to accept payments.");return;}
+    const amt=cart.reduce((s,i)=>s+i.price*i.quantity,0);
+    const rzp=new Razorpay({key:RAZORPAY_KEY,amount:amt*100,currency:"INR",name:"Kazira",description:"Secure Checkout",handler:function(r){alert("Payment received! ID: "+r.razorpay_payment_id);cart=[];updateCartUI();toggleCart();},prefill:{name:"Valued Customer"},theme:{color:"#1a1a1a"}});
+    rzp.open();}
+</script>
+</body>
+</html>
