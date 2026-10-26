@@ -602,9 +602,9 @@ footer .fb .mark{width:64px;height:76px;background:none;border-radius:0;padding:
 .hero.h3 .live{background:#3EE07F}
 .hero.h3 .btn-gold{background:linear-gradient(180deg,#F1DDAE,#C9A562);color:#0B2C22;box-shadow:0 12px 28px -12px rgba(216,189,134,.7),inset 0 1px 0 rgba(255,255,255,.6)}
 .hero.h3 .btn-gold::after{background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.6) 50%,transparent 70%)}
-.hero.h3 .hero-art::before,.hero.h3 .hero-art::after{display:none}
+.hero .hero-art::before,.hero .hero-art::after{display:none}
 .dust{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
-.dust i{position:absolute;bottom:-10px;width:var(--s);height:var(--s);border-radius:50%;background:radial-gradient(circle,#FFF3D1,#D8BD86 45%,transparent 70%);opacity:0;animation:dust var(--t) linear var(--dl) infinite}
+.dust i{position:absolute;bottom:-10px;width:var(--s);height:var(--s);border-radius:50%;background:radial-gradient(circle,#D8BD86,#B8975A 45%,transparent 70%);opacity:0;animation:dust var(--t) linear var(--dl) infinite}
 @keyframes dust{0%{transform:translate(0,0);opacity:0}12%{opacity:.9}100%{transform:translate(var(--x),-110vh);opacity:0}}
 .window{position:absolute;left:50%;top:50%;width:min(88%,420px);aspect-ratio:240/280;transform:translate(-50%,-52%) perspective(900px) rotateY(var(--ry,0deg)) rotateX(var(--rx,0deg));transition:transform .5s var(--ease);z-index:1;animation:winIn 1.2s var(--ease) both}
 @keyframes winIn{from{opacity:0;transform:translate(-50%,-46%) scale(.92)}}
@@ -624,8 +624,8 @@ footer .fb .mark{width:64px;height:76px;background:none;border-radius:0;padding:
 .window .dots button.on{width:22px;border-radius:5px;background:#D8BD86}
 .window .lotus{position:absolute;bottom:-4%;width:24%;z-index:3;filter:drop-shadow(0 6px 10px rgba(0,0,0,.35));animation:bloom 1s var(--spring) .8s both}
 .window .lotus.l{left:-12%}.window .lotus.r{right:-12%;transform:scaleX(-1)}
-.hero.h3 .feather{right:-10%;top:-4%;opacity:.55}
-@media (max-width:860px){.hero.h3 .hero-art{height:430px}.window{width:min(74%,290px)}.window .cap b{font-size:.95rem}.window .cap span{font-size:.75rem}}
+.hero .feather{right:-10%;top:-4%;opacity:.8}
+@media (max-width:860px){.hero .hero-art{height:430px}.window{width:min(74%,290px)}.window .cap b{font-size:.95rem}.window .cap span{font-size:.75rem}}
 .orn{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--gold-mid);padding:6px 0 0}
 .orn::before,.orn::after{content:"";height:1px;width:min(28vw,180px);background:linear-gradient(90deg,transparent,var(--gold-mid))}
 .orn::after{transform:scaleX(-1)}
@@ -897,7 +897,7 @@ function feather(){
 function homeView(){
   const best = ['c20', 'c1', 'c14', 'c7', 'c21', 'c15', 'c6', 'c4'].map(byId);
   return `
-  <section class="hero h3">
+  <section class="hero">
     <div class="dust">${DUST}</div>
     <div class="wrap">
       <div class="hero-copy">
