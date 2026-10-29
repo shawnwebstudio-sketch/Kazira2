@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset="utf-8"><link rel="icon" href="img/logo.png"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Ever Green Shoppe · Madurai</title></head><body>
+<!doctype html><html><head><meta charset="utf-8"><link rel="icon" href="img/icon.png"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Ever Green Shoppe · Madurai</title></head><body>
 <title>Ever Green Shoppe</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Ever Green Shoppe, Madurai. Banarasi tissue silk, zari, bandhani and cotton sarees. Order on WhatsApp, open 24 hours.">
@@ -688,6 +688,7 @@ body{background:#FBF7F0;margin:0}
 .mnav a{display:block;padding:11px 0;border-bottom:1px solid #EFE6D8;text-decoration:none;font-size:1rem;color:var(--ink)}
 .scrim{z-index:110}
 .drawer{z-index:115}
+.toast{z-index:105}
 @media (max-width:1060px){.nav4 a{padding:0 9px;font-size:.78rem}}
 @media (max-width:900px){
   .nav4{display:none}
@@ -870,7 +871,7 @@ footer.f4 .credit{border-top:1px solid rgba(216,189,134,.18);padding-block:18px 
 .fab{bottom:24px}
 
 /* v5: new EG logo, gopuram band, real map */
-.brand4 img,.hdr.h4 .brand4 img{width:auto;height:68px;border-radius:0;box-shadow:none;object-fit:contain;filter:drop-shadow(0 3px 5px rgba(91,69,32,.25))}
+.brand4 img,.hdr.h4 .brand4 img{width:auto;height:78px;border-radius:0;box-shadow:none;object-fit:contain;filter:drop-shadow(0 3px 5px rgba(91,69,32,.25))}
 .mnav .mh img{width:auto;height:40px;border-radius:0;object-fit:contain}
 .mark{object-fit:contain;border-radius:0!important}
 .sig img{width:auto!important;height:34px!important;border-radius:0!important;object-fit:contain}
@@ -896,6 +897,9 @@ footer.f4 .fabout img{width:170px;border-radius:14px}
   .gopuram::before{background:linear-gradient(0deg,#0B2C22 0%,#0B2C22 48%,rgba(11,44,34,.3) 62%,transparent 75%)}
   .gp-t{padding:0 24px 30px;margin-top:-40px}
 }
+.gp-cr{position:absolute;right:14px;bottom:10px;z-index:3;font-size:.68rem;color:rgba(255,255,255,.8);text-decoration:none;text-shadow:0 1px 3px rgba(0,0,0,.6)}
+.hb-cr{position:absolute;right:16px;bottom:12px;z-index:3;font-size:.66rem;color:rgba(255,255,255,.85);text-shadow:0 1px 3px rgba(0,0,0,.6);text-decoration:none}
+@media (max-width:760px){.hb-cr{top:8px;bottom:auto;right:10px}}
 </style>
 
 <svg class="sprite" aria-hidden="true" width="0" height="0" style="position:absolute"><defs>
@@ -928,7 +932,7 @@ footer.f4 .fabout img{width:170px;border-radius:14px}
 <rect x="56" y="259" width="128" height="12" rx="2" fill="none" stroke="#F7E9C4" stroke-width=".6" opacity=".8"/>
 <text x="120" y="268.6" text-anchor="middle" font-family="'Hind Madurai',sans-serif" font-size="8.4" font-weight="700" letter-spacing="3.2" fill="#0F3B2E">MADURAI</text></symbol></svg>
 <div class="intro" id="intro" aria-hidden="true"><div class="door l"></div><div class="door r"></div>
-<div class="intro-in"><img class="emb" src="img/logoEG.jpg" alt="Ever Green Shoppe"></div></div></div>
+<div class="intro-in"><img class="emb" src="img/logo-ev.jpg" alt="Ever Green Shoppe"></div></div></div>
 <div class="progress" id="progress"></div>
 <div class="ribbon" aria-label="Store announcements"><div class="track" id="ribbon"></div></div>
 
@@ -936,7 +940,7 @@ footer.f4 .fabout img{width:170px;border-radius:14px}
   <div class="wrap top">
     <button class="icon-btn burger" id="burger" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
     <button class="srch" id="openSearch" aria-label="Search sarees"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span>Search sarees, khadi, chudi…</span></button>
-    <a class="brand4" href="#home" aria-label="Ever Green Shoppe home"><img src="img/mark-eg.png" alt=""><span><b>Ever Green Shoppe</b><small>Create Your Own Style</small></span></a>
+    <a class="brand4" href="#home" aria-label="Ever Green Shoppe home"><img src="img/mark-ev.png" alt=""><span><b>Ever Green Shoppe</b><small>Create Your Own Style</small></span></a>
     <div class="hdr-actions">
       <a class="icon-btn hide-s" href="#saved" aria-label="Saved sarees"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-9-9.2C1.6 7.3 4 4 7.3 4c2 0 3.6 1.2 4.7 2.8C13.1 5.2 14.7 4 16.7 4 20 4 22.4 7.3 21 10.8 19 15.6 12 20 12 20Z"/></svg></a>
       <a class="icon-btn hide-s wa-i" href="https://wa.me/917904698007" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm5.8 15.7c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.8 1.2 3.2 1.4 3.4 2.4 3.6 5.7 5c2.1.9 3 1 4 .8.7-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5-.3-.2-.6-.3Z"/></svg></a>
@@ -963,7 +967,7 @@ footer.f4 .fabout img{width:170px;border-radius:14px}
     <a href="#visit" data-nav="visit">Visit Store</a>
   </div></nav>
 </header>
-<aside class="mnav" id="mnav" aria-hidden="true"><div class="mh"><img src="img/mark-eg.png" alt=""><b>Ever Green Shoppe</b><button class="icon-btn" id="mclose" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+<aside class="mnav" id="mnav" aria-hidden="true"><div class="mh"><img src="img/mark-ev.png" alt=""><b>Ever Green Shoppe</b><button class="icon-btn" id="mclose" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
   <a href="#home">Home</a><a href="#shop">All sarees</a><h5>By weave</h5><a href="#cat-banarasi">Banarasi Silk</a><a href="#cat-silkcotton">Silk Cotton &amp; Tissue</a><a href="#cat-khadi">Khadi &amp; Handloom</a><a href="#cat-bandhani">Bandhani</a><a href="#cat-cotton">Cotton Sarees</a><a href="#cat-chudi">Chudi Materials</a>
   <h5>By price</h5><a href="#price-1">Under ₹700</a><a href="#price-2">₹700 to ₹1,000</a><a href="#price-3">Above ₹1,000</a>
   <h5>Help</h5><a href="#saved">Saved sarees</a><a href="#visit">Visit our store</a><a href="#faq">How to order</a><a href="https://wa.me/917904698007" target="_blank" rel="noopener">WhatsApp +91 79046 98007</a></aside>
@@ -978,7 +982,7 @@ footer.f4 .fabout img{width:170px;border-radius:14px}
     <div><b>Real catalogue photos</b><span>What you see is what we stock</span></div>
   </div>
   <div class="wrap fcols">
-    <div class="fabout"><img src="img/logoEG.jpg" alt="Ever Green Shoppe"><p>Sarees and apparel from Madurai. Banarasi tissue silk, khadi, bandhani, sungudi and chudi materials, ordered on WhatsApp.</p></div>
+    <div class="fabout"><img src="img/logo-ev.jpg" alt="Ever Green Shoppe"><p>Sarees and apparel from Madurai. Banarasi tissue silk, khadi, bandhani, sungudi and chudi materials, ordered on WhatsApp.</p></div>
     <div><h4>Shop</h4><a href="#cat-banarasi">Banarasi silk</a><a href="#cat-silkcotton">Silk cotton &amp; tissue</a><a href="#cat-khadi">Khadi &amp; handloom</a><a href="#cat-bandhani">Bandhani</a><a href="#cat-cotton">Cotton sarees</a><a href="#cat-chudi">Chudi materials</a></div>
     <div><h4>Help</h4><a href="#faq">How to order</a><a href="#faq">Frequently asked</a><a href="#saved">Saved sarees</a><a href="#visit">Find our store</a></div>
     <div><h4>Talk to us</h4><a href="https://wa.me/917904698007" target="_blank" rel="noopener">WhatsApp +91 79046 98007</a><a href="tel:+917904698007">Call +91 79046 98007</a><a href="#visit">Jaihindpuram, Madurai 625011</a><span>Open 24 hours</span></div>
@@ -1125,7 +1129,7 @@ const waIcon = `<svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3a13 1
 const bagPlus = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z"/><path d="M12 11v6M9 14h6"/></svg>`;
 const waLink = t => `https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
 const heart = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 20s-7-4.4-9-9.2C1.6 7.3 4 4 7.3 4c2 0 3.6 1.2 4.7 2.8C13.1 5.2 14.7 4 16.7 4 20 4 22.4 7.3 21 10.8 19 15.6 12 20 12 20Z"/></svg>`;
-const MARK = `<img class="mark" src="img/mark-eg.png" alt="">`;
+const MARK = `<img class="mark" src="img/mark-ev.png" alt="">`;
 const HERO = ['c5', 'c22', 'c21', 'c13', 'c16', 'c3'];
 const DUST = Array.from({length: 16}, (_, i) => `<i style="left:${(i * 61) % 100}%;--s:${3 + (i * 7) % 5}px;--t:${9 + (i * 5) % 8}s;--dl:${-(i * 1.3).toFixed(1)}s;--x:${((i * 37) % 60) - 30}px"></i>`).join('');
 const ORN = `<div class="orn" aria-hidden="true"><svg viewBox="0 0 34 20" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M17 2c4 5 4 11 0 16-4-5-4-11 0-16Z"/><path d="M17 10c5 3 10 3 15 0M17 10c-5 3-10 3-15 0"/><circle cx="17" cy="10" r="1.6" fill="currentColor"/></svg></div>`;
@@ -1140,7 +1144,7 @@ const uIc = {
 const HB = [
   {img:'img/hb1.jpg', eb:'Deepavali 2026 · Festive edit', h:'The festive <em>silk</em> edit', p:'Banarasi tissue silks with zari borders that glow under the lamps.', cta:['Shop Banarasi silk', '#cat-banarasi']},
   {img:'img/hb2.jpg', eb:'Handloom &amp; khadi', h:'Light, easy <em>handloom</em>', p:'Office wear khadi and soft cottons from ₹650, made for long Madurai days.', cta:['Shop khadi', '#cat-khadi']},
-  {img:'img/gopuram.jpg', eb:'Jaihindpuram · Madurai', h:'From the city of <em>Meenakshi</em>', p:'Sungudi, silk cotton and our new வாழை நார் பட்டு banana silk, a short ride from the Amman Kovil gopurams. Open 24 hours.', cta:['Shop all sarees', '#shop']}
+  {img:'img/real/south-gopuram-stucco-wide.jpg', cr:'Photo: Madhuranthakan Jagadeesan, CC BY-SA 4.0', eb:'Jaihindpuram · Madurai', h:'From the city of <em>Meenakshi</em>', p:'Sungudi, silk cotton and our new வாழை நார் பட்டு banana silk, a short ride from the Amman Kovil gopurams. Open 24 hours.', cta:['Shop all sarees', '#shop']}
 ];
 const FAQ = [
   ['How do I place an order?', 'Add sarees to your bag and tap checkout. We fill a WhatsApp message with your order and address, and you just press send. The shop replies to confirm stock.'],
@@ -1186,7 +1190,7 @@ function homeView(){
   const fresh = ['c19', 'c3', 'c17', 'c24', 'c10', 'c8', 'c23', 'c9'].map(byId);
   return `
   <section class="hb" id="hb" aria-label="Featured">
-    <div class="hb-track">${HB.map((b, i) => `<div class="hb-s${i ? '' : ' on'}"><img src="${b.img}" alt="" ${i ? 'loading="lazy"' : ''}><div class="wrap"><div class="hb-t"><p class="eyebrow">${b.eb}</p><h1>${b.h}</h1><p>${b.p}</p><div class="cta-row"><a class="btn btn-ink" href="${b.cta[1]}">${b.cta[0]} ${arrow}</a><a class="btn btn-wa" href="${waLink('Vanakkam! I would like to see your latest saree collection.')}" target="_blank" rel="noopener">${waIcon}WhatsApp</a></div></div></div></div>`).join('')}</div>
+    <div class="hb-track">${HB.map((b, i) => `<div class="hb-s${i ? '' : ' on'}"><img src="${b.img}" alt="" ${i ? 'loading="lazy"' : ''}>${b.cr ? `<span class="hb-cr">${b.cr}</span>` : ''}<div class="wrap"><div class="hb-t"><p class="eyebrow">${b.eb}</p><h1>${b.h}</h1><p>${b.p}</p><div class="cta-row"><a class="btn btn-ink" href="${b.cta[1]}">${b.cta[0]} ${arrow}</a><a class="btn btn-wa" href="${waLink('Vanakkam! I would like to see your latest saree collection.')}" target="_blank" rel="noopener">${waIcon}WhatsApp</a></div></div></div></div>`).join('')}</div>
     <button class="hb-a prev" aria-label="Previous">${chevL}</button><button class="hb-a next" aria-label="Next">${chevR}</button>
     <div class="hb-dots">${HB.map((_, i) => `<button class="${i ? '' : 'on'}" aria-label="Slide ${i + 1}"></button>`).join('')}</div>
   </section>
@@ -1243,7 +1247,7 @@ function homeView(){
       <blockquote>
         <p>We believe fashion should make you feel good—not simply look good.</p>
         <p>That’s why we strive to offer styles that you can wear, love and make your own.</p>
-        <div class="sig"><img src="img/mark-eg.png" alt=""><span>Ever Green Shoppe, Madurai</span></div>
+        <div class="sig"><img src="img/mark-ev.png" alt=""><span>Ever Green Shoppe, Madurai</span></div>
       </blockquote>
     </div>
   </div></section>
@@ -1268,7 +1272,7 @@ function homeView(){
 
 function visitBlock(){
   return `<section class="band" id="visitSec" style="padding-top:0"><div class="wrap">
-    <div class="gopuram rv"><img src="img/gopuram.jpg" alt="Madurai Meenakshi Amman Temple gopurams at golden hour" loading="lazy"><div class="gp-t"><p class="eyebrow">மதுரை · The temple city</p><h2>Rooted in <em>Madurai</em>, under the gopurams</h2><p>Ever Green Shoppe sits in Jaihindpuram, close to the Meenakshi Amman Kovil. Come in, touch the weave and drape it before you buy.</p><div class="cta-row"><a class="btn btn-gold" href="${DIRS}" target="_blank" rel="noopener">Get directions ${arrow}</a></div></div></div>
+    <div class="gopuram rv"><img src="img/real/south-gopuram-stucco-wide.jpg" alt="South gopuram of the Meenakshi Amman Temple, Madurai" loading="lazy"><a class="gp-cr" href="https://commons.wikimedia.org/wiki/File:S-TN-34_Meenakshi_Amman_Temple_South_Gopuram_enriched_with_delicate_Stucco_works.jpg" target="_blank" rel="noopener">Photo: Madhuranthakan Jagadeesan, CC BY-SA 4.0</a><div class="gp-t"><p class="eyebrow">மதுரை · The temple city</p><h2>Rooted in <em>Madurai</em>, under the gopurams</h2><p>Ever Green Shoppe sits in Jaihindpuram, close to the Meenakshi Amman Kovil. Come in, touch the weave and drape it before you buy.</p><div class="cta-row"><a class="btn btn-gold" href="${DIRS}" target="_blank" rel="noopener">Get directions ${arrow}</a></div></div></div>
     <div class="sec-head"><div><p class="eyebrow">Visit or call</p><h2>Find us in <em>Madurai</em></h2></div></div>
     <div class="visit">
       <div class="map rv"><canvas id="mapc" aria-hidden="true"></canvas>
