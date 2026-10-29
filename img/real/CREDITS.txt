@@ -35,3 +35,19 @@ File: img/real/madurai-skyline-four-gopurams.jpg
   License: CC BY-SA 2.0
   Source: https://commons.wikimedia.org/wiki/File:Meenakshi_Amman_Temple_(11875881173).jpg
   Size: 2400x1350px, 497 KB
+
+Homepage banner photos (Pexels licence: free for commercial use, no attribution required; credited anyway)
+
+File: img/hb1.jpg
+  Title: Close-up of Silk Saree with Traditional Pattern (stack of Kanchipuram silk sarees)
+  Photographer: Sharath G.
+  License: Pexels License
+  Source: https://www.pexels.com/photo/close-up-of-silk-saree-with-traditional-pattern-10317106/
+  Size: 3840x2160px (cropped 16:9 from 6000x4000 original)
+
+File: img/hb2.jpg
+  Title: Pile of Area Rugs (stacked folded handloom fabrics)
+  Photographer: Digital Buggu
+  License: Pexels License
+  Source: https://www.pexels.com/photo/pile-of-area-rugs-365067/
+  Size: 3840x2160px (cropped 16:9 from 6000x3376 original)
