@@ -1224,7 +1224,7 @@ function card(p){
   return `<article class="pc rv">
     <div class="media"><a class="ph" href="#p-${p.id}"><img src="${p.th}" alt="${p.name}" loading="lazy" decoding="async">${p.tag ? `<span class="chip${p.tag === 'New' ? ' g' : ''}">${p.tag}</span>` : ''}</a>
     <button class="fav" data-fav="${p.id}" aria-pressed="${favs.includes(p.id)}" aria-label="Save ${p.name}">${heart}</button></div>
-    <div class="pb"><span class="cat-l">${catOf(p.cat).name}</span>
+    <div class="pb"><span class="cat-l">${p.batch != null ? p.colors[0][0] : catOf(p.cat).name}</span>
     <a class="nm" href="#p-${p.id}">${p.name}</a>
     <div class="row"><span class="price">${inr(p.price)}</span>${p.colors.length > 1 ? `<span class="dots">${p.colors.slice(0, 5).map(c => `<i style="background:${c[1]}"></i>`).join('')}</span>` : ''}</div>
     ${hasPrice(p) ? `<button class="add add4" data-add="${p.id}">${bagPlus}<span>Add to bag</span></button>` : `<a class="add add4" href="${waLink(`Vanakkam! What is the price of the ${p.name}? ${picUrl(p)}`)}" target="_blank" rel="noopener">${waIcon}<span>Ask price</span></a>`}</div>
