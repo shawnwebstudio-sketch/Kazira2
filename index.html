@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset="utf-8"><script>if(location.protocol==="http:"&&location.hostname!=="localhost")location.replace("https://"+location.host+location.pathname+location.search+location.hash)</script><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><link rel="icon" href="img/icon.png"><link rel="apple-touch-icon" href="img/icon.png"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Ever Green Shoppe · Madurai</title></head><body>
+<!doctype html><html><head><meta charset="utf-8"><link rel="icon" href="img/icon.png"><link rel="apple-touch-icon" href="img/icon.png"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Ever Green Shoppe · Madurai</title></head><body>
 <title>Ever Green Shoppe</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Ever Green Shoppe, Madurai. Banarasi tissue silk, zari, bandhani and cotton sarees. Order on WhatsApp, open 24 hours.">
@@ -290,6 +290,8 @@ footer .credit{grid-column:1/-1;border-top:1px solid rgba(231,192,104,.15);paddi
 .zoom{aspect-ratio:4/5;border-radius:22px;overflow:hidden;background:var(--surface-2);position:relative;cursor:zoom-in;box-shadow:var(--shadow)}
 .zoom img{width:100%;height:100%;object-fit:cover;transition:transform .35s var(--ease)}
 .zoom.on img{transform:scale(2.1)}
+[hidden]{display:none!important}
+.thumbs{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;padding:2px}.thumbs::-webkit-scrollbar{display:none}.thumbs button{flex:0 0 72px;aspect-ratio:4/5;border-radius:12px;overflow:hidden;border:2px solid transparent;padding:0;background:var(--surface-2)}.thumbs button[aria-pressed="true"]{border-color:var(--gold-mid)}.thumbs img{width:100%;height:100%;object-fit:cover}
 .zoom .hint{position:absolute;right:12px;bottom:12px;font-size:.75rem;background:rgba(10,44,32,.75);color:#F5EFDA;padding:6px 10px;border-radius:999px}
 .info{min-width:0;display:flex;flex-direction:column;gap:18px}
 .info h1{font-size:clamp(2rem,4.2vw,3rem)}
@@ -768,7 +770,7 @@ body{background:#FBF7F0;margin:0}
 .ra svg{width:18px;height:18px}
 @media (max-width:640px){.ra{display:none}.h4t.row{align-items:center}}
 
-.circles{display:grid;grid-template-columns:repeat(6,1fr);gap:22px}
+.circles{display:grid;grid-template-columns:repeat(6,1fr);gap:26px 22px}
 .circ{display:grid;justify-items:center;text-align:center;gap:4px;text-decoration:none}
 .circ .ring{width:100%;max-width:168px;aspect-ratio:1;border-radius:50%;padding:5px;background:conic-gradient(from 200deg,#D8BD86,#94733C,#F1DDAE,#B8975A,#D8BD86);box-shadow:0 14px 26px -16px rgba(91,69,32,.6);transition:transform .45s var(--spring)}
 .circ .ring img{width:100%;height:100%;border-radius:50%;object-fit:cover;border:3px solid #FFFCF7}
@@ -954,24 +956,25 @@ footer.f4 .fabout img{width:170px;border-radius:14px}
   <nav class="nav4" aria-label="Main"><div class="wrap">
     <div class="mm"><a href="#shop" data-nav="shop">Sarees <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></a>
       <div class="mega"><div class="wrap">
-        <div><h5>Shop by weave</h5><a href="#cat-banarasi">Banarasi Silk</a><a href="#cat-silkcotton">Silk Cotton &amp; Tissue</a><a href="#cat-khadi">Khadi &amp; Handloom</a><a href="#cat-bandhani">Bandhani</a><a href="#cat-cotton">Cotton Sarees</a><a href="#cat-chudi">Chudi Materials</a></div>
-        <div><h5>Shop by price</h5><a href="#price-1">Under ₹700</a><a href="#price-2">₹700 to ₹1,000</a><a href="#price-3">Above ₹1,000</a><a href="#shop">Shop all</a></div>
-        <div><h5>Shop by occasion</h5><a href="#occ-0">Festive &amp; functions</a><a href="#occ-1">Wedding</a><a href="#occ-2">Office</a><a href="#occ-3">Daily wear</a></div>
-        <a class="mfeat" href="#p-c20"><img src="img/c20.jpg" alt=""><span><small>New launch</small><b>வாழை நார் பட்டு banana silk</b>₹1,400</span></a>
+        <div><h5>Silk &amp; party wear</h5><a href="#cat-banarasi">Banarasi Silk</a><a href="#cat-banana">Banana Silk</a><a href="#cat-celebrity">Celebrity Inspired</a><a href="#cat-paithani">Paithani Silk</a><a href="#cat-kanchi">Semi Kanchivaram</a><a href="#cat-rainbow">Rainbow Silk</a><a href="#cat-insta">Insta Trending</a><a href="#cat-kerala">Kerala &amp; Tissue</a><a href="#cat-silkcotton">Silk Cotton &amp; Tissue</a></div>
+        <div><h5>Cotton &amp; daily wear</h5><a href="#cat-mirror">Linen Mirror Work</a><a href="#cat-narayanpeth">Narayanpeth Cotton</a><a href="#cat-jaipur">Jaipur Mal Cotton</a><a href="#cat-linen">Linen Cotton</a><a href="#cat-khadi">Khadi &amp; Handloom</a><a href="#cat-vayal">Fancy Vayal</a><a href="#cat-bandhani">Bandhani</a><a href="#cat-cotton">Cotton Sarees</a><a href="#cat-chudi">Chudi Materials</a></div>
+        <div><h5>Shop by price</h5><a href="#price-1">Under ₹700</a><a href="#price-2">₹700 to ₹1,000</a><a href="#price-3">Above ₹1,000</a><a href="#shop">Shop all</a><h5 style="margin-top:18px">Shop by occasion</h5><a href="#occ-0">Festive &amp; functions</a><a href="#occ-1">Wedding</a><a href="#occ-2">Office</a><a href="#occ-3">Daily wear</a></div>
+        <a class="mfeat" href="#cat-paithani"><img src="img/wa/t/wa-289.jpg" alt=""><span><small>New arrival</small><b>Myra Kalanjali Paithani</b>₹1,800</span></a>
       </div></div>
     </div>
-    <a href="#cat-banarasi" data-nav="cat-banarasi">Banarasi Silk</a>
-    <a href="#cat-silkcotton" data-nav="cat-silkcotton">Silk Cotton</a>
+    <a href="#cat-banarasi" data-nav="cat-banarasi">Banarasi</a>
+    <a href="#cat-banana" data-nav="cat-banana">Banana Silk</a>
+    <a href="#cat-celebrity" data-nav="cat-celebrity">Celebrity</a>
+    <a href="#cat-paithani" data-nav="cat-paithani">Paithani</a>
     <a href="#cat-khadi" data-nav="cat-khadi">Khadi</a>
-    <a href="#cat-bandhani" data-nav="cat-bandhani">Bandhani</a>
-    <a href="#cat-cotton" data-nav="cat-cotton">Cotton</a>
-    <a href="#cat-chudi" data-nav="cat-chudi">Chudi</a>
+    <a href="#cat-mirror" data-nav="cat-mirror">Mirror Work</a>
+    <a href="#cat-vayal" data-nav="cat-vayal">Vayal</a>
     <a href="#price-1" data-nav="price">Under ₹700</a>
     <a href="#visit" data-nav="visit">Visit Store</a>
   </div></nav>
 </header>
 <aside class="mnav" id="mnav" aria-hidden="true"><div class="mh"><img src="img/mark-ev-badge.png" alt=""><b>Ever Green Shoppe</b><button class="icon-btn" id="mclose" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
-  <a href="#home">Home</a><a href="#shop">All sarees</a><h5>By weave</h5><a href="#cat-banarasi">Banarasi Silk</a><a href="#cat-silkcotton">Silk Cotton &amp; Tissue</a><a href="#cat-khadi">Khadi &amp; Handloom</a><a href="#cat-bandhani">Bandhani</a><a href="#cat-cotton">Cotton Sarees</a><a href="#cat-chudi">Chudi Materials</a>
+  <a href="#home">Home</a><a href="#shop">All sarees</a><h5>Silk &amp; party wear</h5><a href="#cat-banarasi">Banarasi Silk</a><a href="#cat-banana">Banana Silk</a><a href="#cat-celebrity">Celebrity Inspired</a><a href="#cat-paithani">Paithani Silk</a><a href="#cat-kanchi">Semi Kanchivaram</a><a href="#cat-rainbow">Rainbow Silk</a><a href="#cat-insta">Insta Trending</a><a href="#cat-kerala">Kerala &amp; Tissue</a><a href="#cat-silkcotton">Silk Cotton &amp; Tissue</a><h5>Cotton &amp; daily wear</h5><a href="#cat-mirror">Linen Mirror Work</a><a href="#cat-narayanpeth">Narayanpeth Cotton</a><a href="#cat-jaipur">Jaipur Mal Cotton</a><a href="#cat-linen">Linen Cotton</a><a href="#cat-khadi">Khadi &amp; Handloom</a><a href="#cat-vayal">Fancy Vayal</a><a href="#cat-bandhani">Bandhani</a><a href="#cat-cotton">Cotton Sarees</a><a href="#cat-chudi">Chudi Materials</a>
   <h5>By price</h5><a href="#price-1">Under ₹700</a><a href="#price-2">₹700 to ₹1,000</a><a href="#price-3">Above ₹1,000</a>
   <h5>Help</h5><a href="#saved">Saved sarees</a><a href="#visit">Visit our store</a><a href="#faq">How to order</a><a href="https://wa.me/917904698007" target="_blank" rel="noopener">WhatsApp +91 79046 98007</a></aside>
 
@@ -985,12 +988,12 @@ footer.f4 .fabout img{width:170px;border-radius:14px}
     <div><b>Real catalogue photos</b><span>What you see is what we stock</span></div>
   </div>
   <div class="wrap fcols">
-    <div class="fabout"><img src="img/logo-ev.jpg" alt="Ever Green Shoppe"><p>Sarees and apparel from Madurai. Banarasi tissue silk, khadi, bandhani, sungudi and chudi materials, ordered on WhatsApp.</p></div>
-    <div><h4>Shop</h4><a href="#cat-banarasi">Banarasi silk</a><a href="#cat-silkcotton">Silk cotton &amp; tissue</a><a href="#cat-khadi">Khadi &amp; handloom</a><a href="#cat-bandhani">Bandhani</a><a href="#cat-cotton">Cotton sarees</a><a href="#cat-chudi">Chudi materials</a></div>
+    <div class="fabout"><img src="img/logo-ev.jpg" alt="Ever Green Shoppe"><p>Sarees and apparel from Madurai. Banarasi, banana silk, Paithani, Kerala tissue, khadi, Narayanpeth, vayal and more, ordered on WhatsApp.</p></div>
+    <div><h4>Silk &amp; party wear</h4><a href="#cat-banarasi">Banarasi Silk</a><a href="#cat-banana">Banana Silk</a><a href="#cat-celebrity">Celebrity Inspired</a><a href="#cat-paithani">Paithani Silk</a><a href="#cat-kanchi">Semi Kanchivaram</a><a href="#cat-rainbow">Rainbow Silk</a><a href="#cat-insta">Insta Trending</a><a href="#cat-kerala">Kerala &amp; Tissue</a><a href="#cat-silkcotton">Silk Cotton &amp; Tissue</a></div><div><h4>Cotton &amp; daily wear</h4><a href="#cat-mirror">Linen Mirror Work</a><a href="#cat-narayanpeth">Narayanpeth Cotton</a><a href="#cat-jaipur">Jaipur Mal Cotton</a><a href="#cat-linen">Linen Cotton</a><a href="#cat-khadi">Khadi &amp; Handloom</a><a href="#cat-vayal">Fancy Vayal</a><a href="#cat-bandhani">Bandhani</a><a href="#cat-cotton">Cotton Sarees</a><a href="#cat-chudi">Chudi Materials</a></div>
     <div><h4>Help</h4><a href="#faq">How to order</a><a href="#faq">Frequently asked</a><a href="#saved">Saved sarees</a><a href="#visit">Find our store</a></div>
     <div><h4>Talk to us</h4><a href="https://wa.me/917904698007" target="_blank" rel="noopener">WhatsApp +91 79046 98007</a><a href="tel:+917904698007">Call +91 79046 98007</a><a href="#visit">Jaihindpuram, Madurai 625011</a><span>Open 24 hours</span></div>
   </div>
-  <div class="wrap pop"><h4>Popular searches</h4><div class="tags"><a href="#cat-banarasi">Banarasi tissue silk</a><a href="#p-c20">Banana silk saree</a><a href="#p-c7">Madurai sungudi</a><a href="#cat-khadi">Khadi office wear</a><a href="#cat-bandhani">Bandhani cotton</a><a href="#p-c14">Nayanthara inspired saree</a><a href="#p-c18">Kopuram cotton</a><a href="#cat-chudi">Chudi material</a><a href="#price-1">Sarees under ₹700</a><a href="#cat-silkcotton">Silk cotton saree</a></div></div>
+  <div class="wrap pop"><h4>Popular searches</h4><div class="tags"><a href="#cat-banarasi">Banarasi tissue silk</a><a href="#cat-banana">Banana silk saree</a><a href="#cat-paithani">Paithani saree</a><a href="#cat-insta">Mirror work saree</a><a href="#cat-narayanpeth">Narayanpeth cotton</a><a href="#cat-vayal">Vayal saree</a><a href="#p-c7">Madurai sungudi</a><a href="#cat-khadi">Khadi office wear</a><a href="#cat-bandhani">Bandhani cotton</a><a href="#p-c14">Nayanthara inspired saree</a><a href="#p-c18">Kopuram cotton</a><a href="#cat-chudi">Chudi material</a><a href="#price-1">Sarees under ₹700</a><a href="#cat-silkcotton">Silk cotton saree</a></div></div>
   <div class="wrap credit"><span>© 2026 Ever Green Shoppe, Madurai</span><span>Website by shawn webstudio</span></div>
 </footer>
 
@@ -1027,12 +1030,24 @@ const ADDR = 'Jaihindpuram, Madurai 625011';
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 const CATS = [
-  {id:'banarasi', name:'Banarasi Silk', ta:'பனாரசி பட்டு', blurb:'Soft tissue silks with floral weaving, zari borders and woven pallus.', cover:'img/c21.jpg'},
-  {id:'silkcotton', name:'Silk Cotton & Tissue', ta:'சில்க் காட்டன்', blurb:'Silk cottons, tissue weaves, banana silk and fancy sarees for every function.', cover:'img/c19.jpg'},
-  {id:'khadi', name:'Khadi & Handloom', ta:'காதி கைத்தறி', blurb:'Light, budget friendly handloom khadi. Office wear favourites.', cover:'img/c16.jpg'},
-  {id:'bandhani', name:'Bandhani', ta:'பந்தனி', blurb:'Tie-dye dots and bold colour on soft cotton.', cover:'img/c6.jpg'},
-  {id:'cotton', name:'Cotton Sarees', ta:'காட்டன் சேலை', blurb:'Sungudi, Kopuram, linen and premium soft cottons for daily wear.', cover:'img/c18.jpg'},
-  {id:'chudi', name:'Chudi Materials', ta:'சுடிதார்', blurb:'Pure cotton chudi materials and ready-made stitched sets.', cover:'img/c12.jpg'}
+  {id:'banarasi', name:'Banarasi Silk', ta:'பனாரசி பட்டு', blurb:'Banarasi soft silk, katan and tissue sarees with zari weaving, designer pallus and contrast blouses.', cover:'img/c21.jpg', g:'silk'},
+  {id:'banana', name:'Banana Silk', ta:'வாழை நார் பட்டு', blurb:'Our exclusive Vaazhai Naar Pattu, woven from banana fibre with a soft silk sheen.', cover:'img/wa/t/wa-001.jpg', g:'silk'},
+  {id:'celebrity', name:'Celebrity Inspired', ta:'செலிபிரிட்டி ஸ்டைல்', blurb:'Party wear semi tissue and semi Kanchivaram sarees inspired by the looks you love.', cover:'img/wa/t/wa-131.jpg', g:'silk'},
+  {id:'paithani', name:'Paithani Silk', ta:'பைத்தானி', blurb:'Myra Kalanjali Paithani in katan silk with zari buttas and a peacock pallu.', cover:'img/wa/t/wa-289.jpg', g:'silk'},
+  {id:'kanchi', name:'Semi Kanchivaram', ta:'காஞ்சிவரம்', blurb:'Party wear semi Kanchivaram silk with chit pallu and contrast blouse.', cover:'img/wa/t/wa-143.jpg', g:'silk'},
+  {id:'rainbow', name:'Rainbow Silk', ta:'ரெயின்போ சில்க்', blurb:'Heavy Dola silk with peacock feather designs and full body zari weaving.', cover:'img/wa/t/wa-184.jpg', g:'silk'},
+  {id:'insta', name:'Insta Trending', ta:'டிரெண்டிங்', blurb:'Our super hit mirror work sarees, with 1,600 mirrors on every saree.', cover:'img/wa/t/wa-146.jpg', g:'silk'},
+  {id:'kerala', name:'Kerala & Tissue', ta:'கேரளா சேலை', blurb:'Kerala tissue and mul cotton sarees with golden borders. For Onam, Vishu and temple visits.', cover:'img/wa/t/wa-176.jpg', g:'silk'},
+  {id:'silkcotton', name:'Silk Cotton & Tissue', ta:'சில்க் காட்டன்', blurb:'Silk cottons, tissue weaves and fancy sarees for every function.', cover:'img/c19.jpg', g:'silk'},
+  {id:'mirror', name:'Linen Mirror Work', ta:'மிரர் வொர்க்', blurb:'Premium linen cotton with mirror work all over. Light, soft and easy to drape.', cover:'img/wa/t/wa-111.jpg', g:'cotton'},
+  {id:'narayanpeth', name:'Narayanpeth Cotton', ta:'நாராயண்பேட்', blurb:'Pure mercerised cotton with elephant borders and stripe pallus.', cover:'img/wa/t/wa-266.jpg', g:'cotton'},
+  {id:'jaipur', name:'Jaipur Mal Cotton', ta:'ஜெய்ப்பூர் காட்டன்', blurb:'Trending white-cream cottons with red peacock motifs and black zari borders.', cover:'img/wa/t/wa-249.jpg', g:'cotton'},
+  {id:'linen', name:'Linen Cotton', ta:'லினன் காட்டன்', blurb:'Soft, light linen cotton with unique designs and piping borders.', cover:'img/wa/t/wa-051.jpg', g:'cotton'},
+  {id:'khadi', name:'Khadi & Handloom', ta:'காதி கைத்தறி', blurb:'Pure kaadhi, gini khadi and handloom cottons. Cool, soft and made for regular wear.', cover:'img/c16.jpg', g:'cotton'},
+  {id:'vayal', name:'Fancy Vayal', ta:'வாயல் சேலை', blurb:'Budget friendly vayal sarees for office and teachers’ daily wear.', cover:'img/wa/t/wa-311.jpg', g:'cotton'},
+  {id:'bandhani', name:'Bandhani', ta:'பந்தனி', blurb:'Tie-dye dots and bold colour on soft cotton.', cover:'img/c6.jpg', g:'cotton'},
+  {id:'cotton', name:'Cotton Sarees', ta:'காட்டன் சேலை', blurb:'Sungudi, Kopuram, mul mul and premium soft cottons for daily wear.', cover:'img/c18.jpg', g:'cotton'},
+  {id:'chudi', name:'Chudi Materials', ta:'சுடிதார்', blurb:'Pure cotton chudi materials and ready-made stitched sets.', cover:'img/c12.jpg', g:'cotton'}
 ];
 
 /* Every product, name and price below is from the Ever Green Shoppe WhatsApp catalogue. */
@@ -1044,7 +1059,7 @@ const PRODUCTS = [
   P('c21', 'banarasi', 1250, 'Latest Banarasi Tissue Silk Saree', 'Exclusive collection', 'Golden Banarasi tissue silk with a floral brocade body and a shimmering tissue pallu.', 'Banarasi tissue silk', 'Exclusive'),
   P('c14', 'silkcotton', 1200, 'Nayanthara Inspired Silk Cotton Saree', 'Celebrity look', 'Navy silk cotton with gold buttas, a temple zari border and tasselled pallu.', 'Silk cotton', 'Nayanthara inspired'),
   P('c19', 'silkcotton', 1100, 'Tissue Velthari Birds Madhubani Work Saree', 'Super exclusive', 'Sky blue tissue with Madhubani birds, gold stripes and a contrast navy border.', 'Tissue', 'Super exclusive'),
-  P('c20', 'silkcotton', 1400, 'Vaazhai Naar Pattu Banana Silk Saree', 'Ever Green Shoppe proudly launching banana silk', 'வாழை நார் பட்டு. Banana fibre silk in leaf green with a navy pallu, woven buttas and tassels.', 'Banana fibre silk', 'New launch'),
+  P('c20', 'banana', 1400, 'Vaazhai Naar Pattu Banana Silk Saree', 'Ever Green Shoppe proudly launching banana silk', 'வாழை நார் பட்டு. Banana fibre silk in leaf green with a navy pallu, woven buttas and tassels.', 'Banana fibre silk', 'New launch'),
   P('c22', 'silkcotton', 960, 'Dual Tone Khadi Tissue Cotton Saree', 'Premium quality khadi with tassels', 'Peacock green dual tone tissue that changes colour as you move, finished with tassels.', 'Khadi tissue cotton', 'Premium'),
   P('c17', 'silkcotton', 700, 'Georgette Fancy Saree', 'Thread work embroidery design blouse', 'Royal blue georgette with gold leaf print, tassels and an embroidered designer blouse.', 'Georgette', null),
   P('c2', 'khadi', 700, 'Khadi Cotton Love Embroidery Saree', 'Always best quality', 'Handloom khadi cotton with embroidered hearts and pom-pom tassels. Available in many colours.', 'Handloom khadi cotton', 'Many colours',
@@ -1064,17 +1079,64 @@ const PRODUCTS = [
   P('c12', 'chudi', 650, 'Pure Cotton Chudi Material, Navy Floral', 'Most demanded', 'Navy floral print top with embroidered yoke, a striped dupatta and bottom.', 'Pure cotton', 'Most demanded'),
   P('c24', 'chudi', 650, 'Ready-Made Stitched Chudi', 'Cotton mixed chudi with lining', 'Ready-made stitched cotton mix chudi set with lining. Sizes up to XL.', 'Cotton mix', 'Ready-made')
 ];
-PRODUCTS.forEach(p => { p.colors = p.colors || [['As shown', '#888']]; });
+/* New catalogue sent by the shop on WhatsApp, 29 Oct 2026. Every photo is the shop's own.
+   [cat, price, name, note, desc, fabric, tag, length, care, first, last] */
+const HW = 'Gentle hand wash in cold water, dry in shade', DC = 'Dry clean recommended for the first wash';
+const WB = [
+  ['banana', 1400, 'Vaazhai Naar Pattu Banana Silk Saree', 'Exclusive collection', 'வாழை நார் பட்டு. Banana fibre silk with woven buttas, a contrast border and a tasselled pallu. Light and natural, with a soft silk sheen.', 'Banana fibre silk', 'Exclusive', null, DC, 1, 44],
+  ['celebrity', 1300, 'Celebrity Inspired Semi Tissue Saree', 'Party wear · Banarasi tissue', 'Party wear semi tissue saree with border weaving and embroidery all over the body, a designer pink pallu and a contrast blouse. The saree is a little transparent.', 'Semi tissue (Banarasi tissue)', 'Celebrity look', null, DC, 45, 50],
+  ['linen', 600, 'New Linen Cotton Saree', 'No compromise in quality', 'Linen cotton with a beautiful unique design, a unique blouse and a piping border. Very soft and light texture.', 'Linen cotton', 'New', null, HW, 51, 60],
+  ['mirror', 650, 'Linen Cotton Mirror Work Saree, Scallop Border', 'Premium · Wear it this Deepavali', 'Premium linen cotton with mirror work all over, for an elegant look when draped. Beautiful scallop border and a contrast striped blouse. Lightweight, soft and easy to drape.', 'Linen cotton', 'Deepavali', null, HW, 61, 69],
+  ['banarasi', 1300, 'Banarasi Soft Silk Saree', 'Designer pallu · Designer blouse', 'Banarasi soft silk saree with a designer pallu and a designer blouse.', 'Banarasi soft silk', null, null, DC, 70, 74],
+  ['banarasi', 1400, 'Banarasi Soft Silk Saree, Chit Pallu', 'Premium quality', 'Premium quality Banarasi soft silk with a chit pallu and a blouse in the pallu colour.', 'Banarasi soft silk', 'Premium', null, DC, 75, 82],
+  ['khadi', 800, 'Pure Kaadhi Soft Cotton Saree', 'Premium 1st quality · Regular wear', 'Pure khadi soft cotton woven with 100% cotton thread. Cool and soft for regular wear. Comes with a running blouse plus an extra 1 m embroidery blouse.', 'Pure khadi cotton', 'Premium', '6.3 m saree · running blouse + extra 1 m embroidery blouse', HW, 83, 110],
+  ['mirror', 800, 'Linen Cotton Mirror Work Saree, Zari Piping', 'Premium · Wear it this Deepavali', 'Premium linen cotton with mirror work all over, a zari piping border and a contrast kalamkari blouse. Lightweight, soft and easy to drape.', 'Linen cotton', 'Deepavali', null, HW, 111, 130],
+  ['celebrity', 1300, 'Celebrity Inspired Semi Kanchivaram Silk Saree', 'Party wear · Dry wash only', 'Party wear semi Kanchivaram silk with a designer pallu and a designer blouse.', 'Semi Kanchivaram silk', 'Celebrity look', null, 'Dry wash only', 131, 135],
+  ['khadi', 650, 'Gini Khadi Cotton Saree', 'Trending · Premium quality', 'Gini khadi cotton with gorgeous tassel work, a running blouse and an attractive kalamkari printed blouse. Woven from high quality cotton yarn. Very soft, and perfect for summer. Wrapped in tradition, draped in elegance.', 'Gini khadi cotton', 'Trending', 'Running blouse + kalamkari printed blouse', HW, 136, 142],
+  ['kanchi', 1300, 'Semi Kanchivaram Silk Saree, Chit Pallu', 'Party wear', 'Party wear semi Kanchivaram silk with a chit pallu and a contrast blouse.', 'Semi Kanchivaram silk', null, null, DC, 143, 145],
+  ['insta', 1100, 'Insta Trending Mirror Work Saree', 'Our super hit design', 'Pure Arjakh satin viscose silk with a designer print and original mirror work all over the saree (1,600 mirrors). Heavy OG mirror designer lace and a rich work belt with tassels on the pallu, plus a designer blouse.', 'Arjakh satin viscose silk', 'Super hit', null, DC, 146, 169],
+  ['celebrity', 1200, 'Celebrity Inspired Party Wear Silk Saree', 'Party wear · Semi Kanchivaram', 'Party wear semi Kanchivaram silk with a designer pallu and a designer blouse.', 'Semi Kanchivaram silk', 'Celebrity look', null, DC, 170, 175],
+  ['kerala', null, 'Golden Tissue Saree', 'New arrival · Ask us for the price', 'Cream tissue saree with a rich golden border and pallu. Message us on WhatsApp for the price and available colours.', 'Tissue', 'New arrival', null, DC, 176, 183],
+  ['rainbow', 850, 'Rainbow Silk Saree, Peacock Feather Design', 'Heavy Dola silk', 'Rainbow silk in heavy Dola silk with a beautiful peacock feather design on the body, full body zari weaving with print, and a contrast blouse.', 'Heavy Dola silk', null, null, DC, 184, 215],
+  ['banarasi', 1400, 'Banarasi Soft Katan Silk Saree', 'New design launch', 'Banarasi soft katan silk with a fancy trending contrast pattu border, full body zari butti and check weaving, and a unique temple border with matching blouse. Single and multiple pieces available.', 'Banarasi soft katan silk', 'New', null, DC, 216, 221],
+  ['kerala', 1100, 'Kerala Traditional Tissue Saree', 'Perfect for Onam, Vishu & temple visits', 'Elegant Kerala tissue with a rich golden finish. Soft and lightweight, comfortable for long wear, with a smooth texture, a subtle shine and premium finishing.', 'Kerala tissue', 'Traditional', '6.30 m with running blouse', DC, 222, 225],
+  ['kerala', 1200, 'Kerala Special Weave Mul Cotton Saree', '120 count · Try it, love it', 'Authentic Kerala special weave in premium 120 count mul cotton. Plain body with a kanchi border, woven from premium slub mal cotton with assured colour and pure mulmul thread. Comes with a running blouse piece.', '120 count mul cotton', null, 'Running blouse piece included', HW, 226, 242],
+  ['banarasi', 1300, 'Banarasi Katan x Tissue Half & Half Saree', 'New arrival · Exclusive soft silk', 'Banarasi katan and tissue half & half silk in the latest fancy designs. Zari woven border, buti all over the saree, a fancy contrast designer pallu and a contrast blouse piece. Single and multiple pieces available.', 'Banarasi katan and tissue silk', 'New', null, DC, 243, 248],
+  ['jaipur', 800, 'Jaipur Mal Cotton Saree', 'Trending special collection · Book fast', 'White-cream cotton with a striking red and black border, a floral body with traditional red peacock motifs, a delicate black zari border and a large contrast peacock design. Comes with a matching black blouse. No compromise in quality.', 'Jaipur mal cotton', 'Trending', '6.30 m including 80 cm blouse piece', HW, 249, 254],
+  ['banarasi', 1100, 'Premium Banarasi Soft Silk Saree', 'Party wear', 'Premium quality Banarasi soft silk for party wear, with a designer pallu and a designer blouse.', 'Banarasi soft silk', null, null, DC, 255, 259],
+  ['celebrity', 1400, 'Celebrity Inspired Banarasi Tissue Saree', 'Party wear · Same to same design', 'Party wear semi tissue (Banarasi tissue) with border weaving and embroidery all over the body, a designer pink pallu and a contrast blouse.', 'Semi tissue (Banarasi tissue)', 'Celebrity look', null, DC, 260, 265],
+  ['narayanpeth', 1200, 'Narayanpeth Elephant Border Saree', 'Ready stock · Single & multiples available', 'Pure mercerised cotton 2/100s with an elephant border, a stripe pallu and a running blouse. Small thread marks are part of the handloom weave, and colours may vary slightly.', 'Pure mercerised cotton 2/100s', 'Ready stock', '6.20 m including tassels', HW, 266, 288],
+  ['paithani', 1800, 'Myra Kalanjali Paithani Saree', 'Premium quality', 'Katan silk with a pure silk feel, zari buttas all over, a beautiful peacock pallu and an aari work blouse piece.', 'Katan silk', 'Premium', null, DC, 289, 310],
+  ['vayal', 500, 'Fancy Vayal Saree', 'Office & teachers’ daily wear', 'Comfortable, elegant and budget friendly vayal saree for everyday use. Perfect for office and teachers’ daily wear. Comes with blouse.', 'Vayal', 'Budget', '6.30 m with blouse', 'Normal wash · easy to maintain', 311, 330],
+  ['vayal', 650, 'Fancy Vayal Saree, Premium', 'Office & teachers’ daily wear', 'Comfortable, elegant and budget friendly vayal saree for everyday use. Perfect for office and teachers’ daily wear. Comes with blouse.', 'Vayal', null, '6.30 m with blouse', 'Normal wash · easy to maintain', 331, 348]
+];
+/* Exact resends are left out of the grid; near-identical shots join the first photo's gallery. */
+const WA_SKIP = [72, 100, 110, 200, 201, 202, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215];
+const WA_EXTRA = {101: 90, 115: 114};
+const pad3 = n => String(n).padStart(3, '0');
+WB.forEach(([cat, price, name, note, desc, fabric, tag, len, care, a, b], bi) => {
+  const nums = [];
+  for (let n = a; n <= b; n++) if (!WA_SKIP.includes(n) && !WA_EXTRA[n]) nums.push(n);
+  nums.forEach((n, k) => PRODUCTS.push({
+    id: 'w' + n, cat, price, name: nums.length > 1 ? `${name} · Design ${k + 1}` : name, base: name, note, desc, fabric, tag: k === 0 ? tag : null, len, care, batch: bi,
+    img: `img/wa/wa-${pad3(n)}.jpg`, th: `img/wa/t/wa-${pad3(n)}.jpg`,
+    imgs: [n, ...Object.keys(WA_EXTRA).filter(x => WA_EXTRA[x] === n).map(Number)].map(x => `img/wa/wa-${pad3(x)}.jpg`)
+  }));
+});
+PRODUCTS.forEach(p => { p.colors = p.colors || [['As shown', '#888']]; p.th = p.th || p.img; p.imgs = p.imgs || [p.img]; });
 const byId = id => PRODUCTS.find(p => p.id === id);
 const catOf = id => CATS.find(c => c.id === id);
-const inr = n => '₹' + n.toLocaleString('en-IN');
+const inr = n => n == null || isNaN(n) ? 'Price on WhatsApp' : '₹' + n.toLocaleString('en-IN');
+const lineAmt = (p, q) => p.price == null ? null : p.price * q;
+const hasPrice = p => p.price != null;
+const picUrl = p => new URL(p.img, location.href).href;
 
 /* ---------- cart ---------- */
 let cart = [];
 try { cart = JSON.parse(localStorage.getItem('egs-cart') || '[]').filter(l => byId(l.id)); } catch (e) { cart = []; }
 const save = () => { try { localStorage.setItem('egs-cart', JSON.stringify(cart)); } catch (e) {} };
 const count = () => cart.reduce((s, l) => s + l.qty, 0);
-const subtotal = () => cart.reduce((s, l) => s + byId(l.id).price * l.qty, 0);
+const subtotal = () => cart.reduce((s, l) => s + (byId(l.id).price || 0) * l.qty, 0);
 function addToCart(id, qty = 1, color, fromEl){
   const p = byId(id); color = color || p.colors[0][0];
   const ex = cart.find(l => l.id === id && l.color === color);
@@ -1110,7 +1172,7 @@ function renderCart(){
     foot.hidden = true; return;
   }
   foot.hidden = false;
-  box.innerHTML = cart.map((l, i) => { const p = byId(l.id); return `<div class="line"><img src="${p.img}" alt=""><div style="min-width:0"><div class="t">${p.name}</div><div class="s">${l.color} · <span class="price">${inr(p.price)}</span></div><div class="qty"><button data-q="${i}" data-d="-1" aria-label="One less">−</button><output>${l.qty}</output><button data-q="${i}" data-d="1" aria-label="One more">+</button></div></div><button class="rm" data-rm="${i}">Remove</button></div>`; }).join('');
+  box.innerHTML = cart.map((l, i) => { const p = byId(l.id); return `<div class="line"><img src="${p.th}" alt=""><div style="min-width:0"><div class="t">${p.name}</div><div class="s">${l.color} · <span class="price">${inr(p.price)}</span></div><div class="qty"><button data-q="${i}" data-d="-1" aria-label="One less">−</button><output>${l.qty}</output><button data-q="${i}" data-d="1" aria-label="One more">+</button></div></div><button class="rm" data-rm="${i}">Remove</button></div>`; }).join('');
   foot.innerHTML = `<div class="tot"><span>Subtotal</span><b>${inr(subtotal())}</b></div><p class="note">Delivery charges and payment are confirmed with you on WhatsApp.</p><a class="btn btn-gold" href="#checkout" data-close>Checkout on WhatsApp</a>`;
 }
 document.getElementById('cartItems').addEventListener('click', e => {
@@ -1156,19 +1218,19 @@ const FAQ = [
   ['Can I visit the shop?', 'Yes. We are at Jaihindpuram, Madurai 625011, open 24 hours. Tap Get directions in Find us for the Google Maps route.'],
   ['Do the sarees come with a blouse piece?', 'Most sarees include a blouse piece. Ask us on WhatsApp and we will confirm the blouse and exact length for any saree.']
 ];
-const OCC = {'Festive & functions': ['banarasi', 'silkcotton', 'bandhani'], 'Wedding': ['banarasi', 'silkcotton'], 'Office': ['khadi', 'cotton', 'bandhani'], 'Daily wear': ['cotton', 'khadi', 'chudi', 'bandhani']};
+const OCC = {'Festive & functions': ['banarasi', 'banana', 'celebrity', 'paithani', 'kanchi', 'rainbow', 'insta', 'kerala', 'silkcotton', 'bandhani'], 'Wedding': ['banarasi', 'paithani', 'kanchi', 'celebrity', 'banana', 'silkcotton'], 'Office': ['khadi', 'vayal', 'linen', 'mirror', 'narayanpeth', 'jaipur', 'cotton', 'bandhani'], 'Daily wear': ['cotton', 'khadi', 'vayal', 'linen', 'narayanpeth', 'chudi', 'bandhani']};
 const BUD = [['Any budget', 0, 99999], ['Under ₹700', 0, 699], ['₹700 to ₹1,000', 700, 1000], ['Above ₹1,000', 1001, 99999]];
 let favs = []; try { favs = JSON.parse(localStorage.getItem('egs-favs') || '[]'); } catch (e) {}
 const saveFavs = () => { try { localStorage.setItem('egs-favs', JSON.stringify(favs)); } catch (e) {} };
 
 function card(p){
   return `<article class="pc rv">
-    <div class="media"><a class="ph" href="#p-${p.id}"><img src="${p.img}" alt="${p.name}" loading="lazy">${p.tag ? `<span class="chip${p.tag === 'New' ? ' g' : ''}">${p.tag}</span>` : ''}</a>
+    <div class="media"><a class="ph" href="#p-${p.id}"><img src="${p.th}" alt="${p.name}" loading="lazy" decoding="async">${p.tag ? `<span class="chip${p.tag === 'New' ? ' g' : ''}">${p.tag}</span>` : ''}</a>
     <button class="fav" data-fav="${p.id}" aria-pressed="${favs.includes(p.id)}" aria-label="Save ${p.name}">${heart}</button></div>
     <div class="pb"><span class="cat-l">${catOf(p.cat).name}</span>
     <a class="nm" href="#p-${p.id}">${p.name}</a>
     <div class="row"><span class="price">${inr(p.price)}</span>${p.colors.length > 1 ? `<span class="dots">${p.colors.slice(0, 5).map(c => `<i style="background:${c[1]}"></i>`).join('')}</span>` : ''}</div>
-    <button class="add add4" data-add="${p.id}">${bagPlus}<span>Add to bag</span></button></div>
+    ${hasPrice(p) ? `<button class="add add4" data-add="${p.id}">${bagPlus}<span>Add to bag</span></button>` : `<a class="add add4" href="${waLink(`Vanakkam! What is the price of the ${p.name}? ${picUrl(p)}`)}" target="_blank" rel="noopener">${waIcon}<span>Ask price</span></a>`}</div>
   </article>`;
 }
 
@@ -1189,8 +1251,8 @@ function feather(){
 }
 
 function homeView(){
-  const best = ['c20', 'c1', 'c14', 'c21', 'c7', 'c4', 'c6', 'c22', 'c15'].map(byId);
-  const fresh = ['c19', 'c3', 'c17', 'c24', 'c10', 'c8', 'c23', 'c9'].map(byId);
+  const best = ['w289', 'w146', 'w2', 'c1', 'w131', 'w266', 'w176', 'c14', 'w111', 'c21', 'w83', 'w249'].map(byId);
+  const fresh = WB.map(b => PRODUCTS.find(p => p.batch === WB.indexOf(b))).filter(Boolean);
   return `
   <section class="hb" id="hb" aria-label="Featured">
     <div class="hb-track">${HB.map((b, i) => `<div class="hb-s${i ? '' : ' on'}"><img src="${b.img}" alt="" ${i ? 'loading="lazy"' : ''}>${b.cr ? `<span class="hb-cr">${b.cr}</span>` : ''}<div class="wrap"><div class="hb-t"><p class="eyebrow">${b.eb}</p><h1>${b.h}</h1><p>${b.p}</p><div class="cta-row"><a class="btn btn-ink" href="${b.cta[1]}">${b.cta[0]} ${arrow}</a><a class="btn btn-wa" href="${waLink('Vanakkam! I would like to see your latest saree collection.')}" target="_blank" rel="noopener">${waIcon}WhatsApp</a></div></div></div></div>`).join('')}</div>
@@ -1204,7 +1266,7 @@ function homeView(){
 
   <section class="s4"><div class="wrap">
     <div class="h4t"><h2>Browse our <em>categories</em></h2><p>Explore every weave in the shop</p></div>
-    <div class="circles">${CATS.map(c => `<a class="circ rv" href="#cat-${c.id}"><span class="ring"><img src="${c.cover}" alt="" loading="lazy"></span><b>${c.name}</b><small>${c.ta}</small></a>`).join('')}</div>
+    <div class="circles">${CATS.map(c => `<a class="circ rv" href="#cat-${c.id}"><span class="ring"><img src="${c.cover}" alt="" loading="lazy"></span><b>${c.name}</b><small>${PRODUCTS.filter(p => p.cat === c.id).length} styles</small></a>`).join('')}</div>
   </div></section>
 
   <section class="s4 tint"><div class="wrap">
@@ -1216,7 +1278,7 @@ function homeView(){
     <div class="h4t"><h2>Celebrate <em>tradition</em></h2><p>Our exquisite range of sarees for every moment</p></div>
     <div class="promos">
       <a class="promo big rv" href="#cat-banarasi"><img src="img/c21.jpg" alt="" loading="lazy"><span class="pt"><small>Festive favourite</small><b>Banarasi Tissue Silk</b><i>From ${inr(1000)} · Shop now ${arrow}</i></span></a>
-      <a class="promo rv" href="#p-c20"><img src="img/c20.jpg" alt="" loading="lazy"><span class="pt"><small>New launch</small><b>வாழை நார் பட்டு</b><i>Banana silk · ${inr(1400)} ${arrow}</i></span></a>
+      <a class="promo rv" href="#cat-banana"><img src="img/c20.jpg" alt="" loading="lazy"><span class="pt"><small>New launch</small><b>வாழை நார் பட்டு</b><i>Banana silk · ${inr(1400)} ${arrow}</i></span></a>
       <a class="promo rv" href="#cat-khadi"><img src="img/c13.jpg" alt="" loading="lazy"><span class="pt"><small>Office wear</small><b>Handloom Khadi</b><i>From ${inr(700)} · Shop now ${arrow}</i></span></a>
     </div>
   </div></section>
@@ -1228,7 +1290,7 @@ function homeView(){
 
   <section class="s4 tint"><div class="wrap">
     <div class="h4t"><h2>Shop by <em>price</em></h2><p>Beautiful sarees for every budget</p></div>
-    <div class="prices">${[[1, 'Under', '₹700'], [2, '₹700 to', '₹1,000'], [3, 'Above', '₹1,000']].map(([i, a, b]) => `<a class="price-t rv" href="#price-${i}"><small>${a}</small><b>${b}</b><span>${PRODUCTS.filter(p => p.price >= BUD[i][1] && p.price <= BUD[i][2]).length} styles ${arrow}</span></a>`).join('')}</div>
+    <div class="prices">${[[1, 'Under', '₹700'], [2, '₹700 to', '₹1,000'], [3, 'Above', '₹1,000']].map(([i, a, b]) => `<a class="price-t rv" href="#price-${i}"><small>${a}</small><b>${b}</b><span>${PRODUCTS.filter(p => hasPrice(p) && p.price >= BUD[i][1] && p.price <= BUD[i][2]).length} styles ${arrow}</span></a>`).join('')}</div>
   </div></section>
 
   <section class="s4"><div class="wrap">
@@ -1261,7 +1323,7 @@ function homeView(){
       <a class="rv" href="#cat-banarasi"><img src="img/c3.jpg" alt="" loading="lazy"><b>Banarasi tissue</b><small>பனாரசி</small><p>Metallic zari runs through the weft, so the fabric glows yet stays feather light.</p></a>
       <a class="rv" href="#p-c7"><img src="img/c7.jpg" alt="" loading="lazy"><b>Madurai sungudi</b><small>சுங்குடி</small><p>Madurai's own cotton saree, known for tiny dot patterns. Light and cool for the city's heat.</p></a>
       <a class="rv" href="#cat-bandhani"><img src="img/c6.jpg" alt="" loading="lazy"><b>Bandhani</b><small>பந்தனி</small><p>Tiny points of cloth are tied before dyeing, leaving rings of dots.</p></a>
-      <a class="rv" href="#p-c20"><img src="img/c20.jpg" alt="" loading="lazy"><b>Banana silk</b><small>வாழை நார் பட்டு</small><p>Woven from banana plant fibre, with a soft silk-like sheen.</p></a>
+      <a class="rv" href="#cat-banana"><img src="img/c20.jpg" alt="" loading="lazy"><b>Banana silk</b><small>வாழை நார் பட்டு</small><p>Woven from banana plant fibre, with a soft silk-like sheen.</p></a>
     </div>
   </div></section>
 
@@ -1295,7 +1357,7 @@ function visitBlock(){
 
 function listView(catId, saved, price, occ){
   const c = catId ? catOf(catId) : null, pb = price ? BUD[price] : null, ok = occ != null ? Object.keys(OCC)[occ] : null;
-  const keep = p => saved ? favs.includes(p.id) : pb ? p.price >= pb[1] && p.price <= pb[2] : ok ? OCC[ok].includes(p.cat) : (!c || p.cat === c.id);
+  const keep = p => saved ? favs.includes(p.id) : pb ? hasPrice(p) && p.price >= pb[1] && p.price <= pb[2] : ok ? OCC[ok].includes(p.cat) : (!c || p.cat === c.id);
   const items = PRODUCTS.filter(keep);
   return `<section class="page-hero">${c ? `<div class="bg" style="background-image:url(${c.cover})"></div>` : ''}<div class="wrap">
     <div class="crumbs"><a href="#home">Home</a> / ${c ? `<a href="#shop">Shop</a> / ${c.name}` : 'Shop all'}</div>
@@ -1311,27 +1373,29 @@ function listView(catId, saved, price, occ){
 
 function productView(id){
   const p = byId(id), c = catOf(p.cat);
-  const rel = PRODUCTS.filter(x => x.cat === p.cat && x.id !== p.id).concat(PRODUCTS.filter(x => x.cat !== p.cat)).slice(0, 4);
+  const sib = p.batch != null ? PRODUCTS.filter(x => x.batch === p.batch && x.id !== p.id) : [];
+  const rel = PRODUCTS.filter(x => x.cat === p.cat && x.id !== p.id && (p.batch == null || x.batch !== p.batch)).concat(PRODUCTS.filter(x => x.cat !== p.cat)).slice(0, 4);
   return `<div class="wrap"><div class="pdp">
     <div class="crumbs"><a href="#home">Home</a> / <a href="#cat-${c.id}">${c.name}</a> / ${p.name}</div>
-    <div class="gal"><div class="zoom" id="zoom"><img src="${p.img}" alt="${p.name}"><span class="hint">Tap to zoom</span></div></div>
+    <div class="gal"><div class="zoom" id="zoom"><img src="${p.img}" alt="${p.name}"><span class="hint">Tap to zoom</span></div>${p.imgs.length > 1 ? `<div class="thumbs">${p.imgs.map((x, i) => `<button data-img="${x}" aria-pressed="${i === 0}" aria-label="Photo ${i + 1}"><img src="${x.replace('img/wa/', 'img/wa/t/')}" alt=""></button>`).join('')}</div>` : ''}</div>
     <div class="info">
       <div><p class="eyebrow">${c.name}</p><h1 style="margin-top:8px">${p.name}</h1><p class="ta" style="margin-top:6px">${c.ta}</p></div>
       <div class="pr"><span class="price">${inr(p.price)}</span></div>
       <p class="desc">${p.desc}</p>
       ${p.colors.length > 1 ? '' : '<!--'}<div class="opt"><h4>Colour: <span id="colName">${p.colors[0][0]}</span></h4><div class="swatches">${p.colors.map((x, i) => `<button data-col="${x[0]}" style="background:${x[1]}" aria-label="${x[0]}" aria-pressed="${i === 0}"></button>`).join('')}</div></div>${p.colors.length > 1 ? '' : '-->'}
-      <div class="opt"><h4>Quantity</h4><div class="qty"><button id="qm" aria-label="One less">−</button><output id="qv">1</output><button id="qp" aria-label="One more">+</button></div></div>
-      <div class="buy"><button class="btn btn-gold" id="addBtn">${bagPlus}Add to bag</button><a class="btn btn-wa" id="askBtn" target="_blank" rel="noopener" href="#">${waIcon}Ask on WhatsApp</a></div>
+      <div class="opt"${hasPrice(p) ? '' : ' hidden'}><h4>Quantity</h4><div class="qty"><button id="qm" aria-label="One less">−</button><output id="qv">1</output><button id="qp" aria-label="One more">+</button></div></div>
+      <div class="buy"><button class="btn btn-gold" id="addBtn"${hasPrice(p) ? '' : ' hidden'}>${bagPlus}Add to bag</button><a class="btn btn-wa" id="askBtn" target="_blank" rel="noopener" href="#">${waIcon}Ask on WhatsApp</a></div>
       <div class="assure">
         <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>Order by WhatsApp chat</div>
         <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12Z"/></svg>Pickup in Madurai</div>
         <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8M21 3v5h-5"/></svg>Ask for more photos</div>
       </div>
       <dl class="specs">
-        <div><dt>Fabric</dt><dd>${p.fabric}</dd></div><div><dt>From the shop</dt><dd>${p.note}</dd></div><div><dt>Length &amp; size</dt><dd>${p.cat === 'chudi' ? 'Ask us for sizes on WhatsApp' : 'Ask us for the exact length and blouse details'}</dd></div><div><dt>Care</dt><dd>${['cotton', 'khadi', 'bandhani', 'chudi'].includes(p.cat) ? 'Gentle hand wash in cold water, dry in shade' : 'Dry clean recommended for the first wash'}</dd></div>
+        <div><dt>Fabric</dt><dd>${p.fabric}</dd></div><div><dt>From the shop</dt><dd>${p.note}</dd></div><div><dt>Length &amp; size</dt><dd>${p.len || (p.cat === 'chudi' ? 'Ask us for sizes on WhatsApp' : 'Ask us for the exact length and blouse details')}</dd></div><div><dt>Care</dt><dd>${p.care || (['cotton', 'khadi', 'bandhani', 'chudi'].includes(p.cat) ? 'Gentle hand wash in cold water, dry in shade' : 'Dry clean recommended for the first wash')}</dd></div>
       </dl>
     </div>
   </div>
+  ${sib.length ? `<div class="sec-head" style="margin-top:20px"><div><p class="eyebrow">Same collection · ${inr(p.price)}</p><h2>More designs in <em>${p.base}</em></h2></div></div><div class="grid">${sib.slice(0, 12).map(card).join('')}</div>${sib.length > 12 ? `<p style="text-align:center;margin-top:18px"><a class="link-more" href="#cat-${c.id}">See all ${sib.length + 1} designs ${arrow}</a></p>` : ''}` : ''}
   <div class="sec-head" style="margin-top:20px"><div><p class="eyebrow">You may also like</p><h2>More to drape</h2></div></div>
   <div class="grid">${rel.map(card).join('')}</div></div>`;
 }
@@ -1360,7 +1424,7 @@ function checkoutView(){
       <p class="note" style="text-align:center">WhatsApp opens with your order ready. Nothing is sent until you press send there.</p>
     </form>
     <aside class="summary"><h3>Order summary</h3>
-      ${cart.map(l => { const p = byId(l.id); return `<div class="sline"><img src="${p.img}" alt=""><div style="min-width:0"><div style="font-weight:600;line-height:1.3">${p.name}</div><div style="color:var(--muted);font-size:.8rem">${l.color} · Qty ${l.qty}</div></div><span class="p">${inr(p.price * l.qty)}</span></div>`; }).join('')}
+      ${cart.map(l => { const p = byId(l.id); return `<div class="sline"><img src="${p.th}" alt=""><div style="min-width:0"><div style="font-weight:600;line-height:1.3">${p.name}</div><div style="color:var(--muted);font-size:.8rem">${l.color} · Qty ${l.qty}</div></div><span class="p">${inr(lineAmt(p, l.qty))}</span></div>`; }).join('')}
       <div class="srow"><span>Subtotal</span><b>${inr(subtotal())}</b></div>
       <div class="srow"><span>Delivery</span><span>Confirmed on WhatsApp</span></div>
       <div class="srow t"><span>Total</span><b>${inr(subtotal())}</b></div>
@@ -1370,7 +1434,7 @@ function checkoutView(){
 
 function orderText(f){
   const id = 'EG' + new Date().toISOString().slice(2, 10).replace(/-/g, '') + '-' + Math.floor(1000 + Math.random() * 9000);
-  const lines = cart.map((l, i) => { const p = byId(l.id); return `${i + 1}. ${p.name} (${l.color}) x ${l.qty} = ${inr(p.price * l.qty)}`; }).join('\n');
+  const lines = cart.map((l, i) => { const p = byId(l.id); return `${i + 1}. ${p.name} (${l.color}) x ${l.qty} = ${inr(lineAmt(p, l.qty))}\n   Photo: ${picUrl(p)}`; }).join('\n');
   const addr = f.mode === 'Home delivery' ? `\nAddress: ${f.addr}, ${f.city} - ${f.pin}` : '';
   return { id, text: `Vanakkam Ever Green Shoppe!\nNew order from the website.\n\n*Order ${id}*\n${lines}\n\n*Total: ${inr(subtotal())}*\n\nName: ${f.name}\nMobile: ${f.phone}\nDelivery: ${f.mode}${addr}\nPayment: ${f.pay}${f.note ? `\nNote: ${f.note}` : ''}\n\nPlease confirm availability. Thank you!` };
 }
@@ -1431,7 +1495,7 @@ function wire(r){
     const fd = document.getElementById('finder'), st = {occ: Object.keys(OCC)[0], bud: 0};
     const runFinder = () => {
       const b = BUD[st.bud], cats = OCC[st.occ];
-      let hits = PRODUCTS.filter(p => cats.includes(p.cat) && p.price >= b[1] && p.price <= b[2]);
+      let hits = PRODUCTS.filter(p => cats.includes(p.cat) && (st.bud ? hasPrice(p) && p.price >= b[1] && p.price <= b[2] : true));
       document.getElementById('finderTitle').textContent = hits.length ? `${hits.length} picks for ${st.occ.toLowerCase()}${st.bud ? ', ' + b[0].toLowerCase() : ''}` : 'Nothing in that budget yet. Ask us on WhatsApp.';
       document.getElementById('finderRes').innerHTML = hits.slice(0, 4).map(card).join('');
       document.getElementById('finderRes').querySelectorAll('.rv').forEach(el => el.classList.add('in'));
@@ -1458,9 +1522,9 @@ function wire(r){
     const grid = document.getElementById('grid'), sort = document.getElementById('sort');
     sort.onchange = () => {
       const pb = r.price ? BUD[r.price] : null, ok = r.occ != null ? Object.keys(OCC)[r.occ] : null;
-      let items = PRODUCTS.filter(p => r.saved ? favs.includes(p.id) : pb ? p.price >= pb[1] && p.price <= pb[2] : ok ? OCC[ok].includes(p.cat) : (!r.cat || p.cat === r.cat));
-      if (sort.value === 'lo') items = [...items].sort((a, b) => a.price - b.price);
-      if (sort.value === 'hi') items = [...items].sort((a, b) => b.price - a.price);
+      let items = PRODUCTS.filter(p => r.saved ? favs.includes(p.id) : pb ? hasPrice(p) && p.price >= pb[1] && p.price <= pb[2] : ok ? OCC[ok].includes(p.cat) : (!r.cat || p.cat === r.cat));
+      if (sort.value === 'lo') items = [...items].sort((a, b) => (a.price ?? 1e9) - (b.price ?? 1e9));
+      if (sort.value === 'hi') items = [...items].sort((a, b) => (b.price ?? -1) - (a.price ?? -1));
       grid.innerHTML = items.map(card).join('');
       grid.querySelectorAll('.rv').forEach(el => el.classList.add('in'));
     };
@@ -1469,12 +1533,13 @@ function wire(r){
   if (r.v === 'product') {
     const p = byId(r.id); let qty = 1, color = p.colors[0][0];
     const qv = document.getElementById('qv'), ask = document.getElementById('askBtn');
-    const setAsk = () => ask.href = waLink(`Vanakkam! I am interested in the ${p.name} (${color}), ${inr(p.price)}. Is it available?`);
+    const setAsk = () => ask.href = waLink(`Vanakkam! I am interested in the ${p.name} (${color}), ${inr(p.price)}. Is it available? ${picUrl(p)}`);
     setAsk();
     document.getElementById('qm').onclick = () => qv.textContent = qty = Math.max(1, qty - 1);
     document.getElementById('qp').onclick = () => qv.textContent = qty = Math.min(9, qty + 1);
     document.querySelectorAll('[data-col]').forEach(b => b.onclick = () => { document.querySelectorAll('[data-col]').forEach(x => x.setAttribute('aria-pressed', x === b)); color = b.dataset.col; const cn = document.getElementById('colName'); if (cn) cn.textContent = color; setAsk(); });
     document.getElementById('addBtn').onclick = () => addToCart(p.id, qty, color, document.getElementById('zoom'));
+    document.querySelectorAll('[data-img]').forEach(b => b.onclick = () => { document.querySelectorAll('[data-img]').forEach(x => x.setAttribute('aria-pressed', x === b)); document.querySelector('#zoom img').src = b.dataset.img; });
     const z = document.getElementById('zoom'), zi = z.querySelector('img');
     z.onclick = () => z.classList.toggle('on');
     z.onpointermove = e => { const b = z.getBoundingClientRect(); zi.style.transformOrigin = `${(e.clientX - b.left) / b.width * 100}% ${(e.clientY - b.top) / b.height * 100}%`; };
@@ -1555,7 +1620,7 @@ function closeSearch(){ sEl.classList.remove('on'); }
 function runSearch(){
   const t = q.value.trim().toLowerCase();
   const hits = PRODUCTS.filter(p => !t || (p.name + ' ' + p.fabric + ' ' + p.note + ' ' + p.desc + ' ' + catOf(p.cat).name + ' ' + p.colors.map(c => c[0]).join(' ')).toLowerCase().includes(t));
-  qres.innerHTML = hits.length ? `<div class="grid">${hits.map(card).join('')}</div>` : `<p style="color:var(--muted)">No sarees match “${q.value.replace(/</g, '&lt;')}”. Ask us on WhatsApp and we will find it for you.</p>`;
+  qres.innerHTML = hits.length ? `<div class="grid">${hits.slice(0, t ? 120 : 24).map(card).join('')}</div>` : `<p style="color:var(--muted)">No sarees match “${q.value.replace(/</g, '&lt;')}”. Ask us on WhatsApp and we will find it for you.</p>`;
 }
 q.oninput = runSearch;
 qres.addEventListener('click', e => { const add = e.target.closest('[data-add]'); if (add) { e.preventDefault(); addToCart(add.dataset.add, 1, null, add.closest('.pc').querySelector('.ph')); } });
