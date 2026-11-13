@@ -860,6 +860,32 @@ footer.f4 .fabout p{margin-top:14px;max-width:34ch;font-size:.92rem}
 .soc{display:flex;gap:10px;margin-top:18px}.soc a{width:42px;height:42px;padding:0!important;border-radius:50%;display:grid!important;place-items:center;border:1px solid rgba(216,189,134,.45);color:var(--gold-hi);transition:all .25s var(--ease)}.soc a:hover{background:var(--gold-hi);color:var(--green-deep);transform:translateY(-2px)}.soc svg{width:19px;height:19px}
 .soc.lt{margin-top:0}.soc.lt a{border-color:var(--line);color:var(--green)}.soc.lt a:hover{background:var(--green);color:#F6EFE4}
 footer.f4 .fabout img{width:260px!important;max-width:100%;height:auto!important;aspect-ratio:3/2;object-fit:cover!important;border-radius:14px}
+.desc2{margin-top:-6px;font-style:italic;color:var(--muted)}
+.mens{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.mens-t{display:grid;gap:6px;justify-items:start;padding:28px 26px;border-radius:22px;background:var(--green-deep);color:#C9D4C9;text-decoration:none;position:relative;overflow:hidden;box-shadow:var(--shadow);transition:transform .35s var(--ease)}
+.mens-t::after{content:"";position:absolute;right:-60px;top:-60px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(216,189,134,.22),transparent 65%)}
+.mens-t:hover{transform:translateY(-4px)}
+.mens-t .mi{width:58px;height:58px;border-radius:16px;display:grid;place-items:center;background:rgba(216,189,134,.14);color:var(--gold-hi);margin-bottom:8px}
+.mens-t .mi svg{width:30px;height:30px}
+.mens-t b{font-family:var(--display);font-weight:500;font-size:1.45rem;color:#F6EFE4}
+.mens-t small{font-size:.92rem}
+.mens-t i{font-style:normal;font-weight:600;color:var(--gold-hi);margin-top:8px;display:inline-flex;gap:6px;align-items:center}
+.mens-t i svg{width:16px;height:16px}
+.cyos{text-align:center;padding:56px 22px;border-radius:28px;background:linear-gradient(135deg,#F6EFE4,#EFE1C8);border:1px solid var(--gold-hi);display:grid;justify-items:center;gap:10px}
+.cyos h2{font-size:clamp(2rem,5vw,3.2rem);text-transform:uppercase;letter-spacing:.04em}
+.cyos>p:not(.eyebrow){font-family:var(--display);font-style:italic;font-size:clamp(1.15rem,2.6vw,1.5rem);color:var(--blush-deep);margin-bottom:10px}
+.social{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:center}
+.soc-t{display:grid;gap:12px;justify-items:start}
+.soc-t h2{text-transform:uppercase;letter-spacing:.03em;font-size:clamp(2rem,4.2vw,3rem)}
+.soc-t p a{color:var(--green);font-weight:700}
+.tags2{display:flex;flex-wrap:wrap;gap:8px}
+.tags2 span{padding:8px 14px;border-radius:999px;background:var(--surface);border:1px solid var(--gold-hi);color:var(--green);font-weight:600;font-size:.9rem}
+.soc-g{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.soc-g a{aspect-ratio:1;border-radius:16px;overflow:hidden;display:block}
+.soc-g img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+.soc-g a:hover img{transform:scale(1.06)}
+footer.f4 .credit a{display:inline;padding:0;text-decoration:underline}
+@media (max-width:760px){.mens{grid-template-columns:1fr;gap:14px}.mens-t{grid-template-columns:auto 1fr;column-gap:16px;padding:20px}.mens-t .mi{grid-row:span 3;margin:0}.social{grid-template-columns:1fr;gap:24px}}
 .vsoc{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}.vsoc>span{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
 footer.f4 h4{font-family:var(--display);font-weight:500;color:var(--gold-hi);font-size:1.1rem;margin:0 0 12px}
 footer.f4 a{display:block;padding:5px 0;text-decoration:none;font-size:.93rem}
@@ -890,6 +916,7 @@ footer.f4 .fabout img{width:170px;border-radius:14px}
 .gopuram::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,44,34,.92) 0%,rgba(11,44,34,.75) 34%,rgba(11,44,34,.1) 62%,transparent 80%);z-index:1}
 .gp-t{position:relative;z-index:2;max-width:470px;padding:48px 52px;color:#F6EFE4}
 .gp-t .eyebrow{color:var(--gold-hi)}
+.gp-t .gp-eb{font-weight:800;font-size:.86rem;letter-spacing:.2em;color:#F1DDAE;text-shadow:0 1px 6px rgba(0,0,0,.55)}
 .gp-t h2{color:#FBF7F0;font-size:clamp(2rem,3.6vw,3rem);line-height:1.08;margin:10px 0 0}
 .gp-t h2 em{color:var(--gold-hi)}
 .gp-t p{color:rgba(246,239,228,.85);margin-top:14px}
@@ -975,12 +1002,13 @@ footer.f4 .fabout img{width:170px;border-radius:14px}
     <a href="#cat-mirror" data-nav="cat-mirror">Mirror Work</a>
     <a href="#cat-vayal" data-nav="cat-vayal">Vayal</a>
     <a href="#price-1" data-nav="price">Under ₹700</a>
+    <a href="#mens" data-nav="mens">Men’s Wear</a>
     <a href="#visit" data-nav="visit">Visit Store</a>
   </div></nav>
 </header>
 <aside class="mnav" id="mnav" aria-hidden="true"><div class="mh"><img src="img/mark-eg.png" alt=""><b>Ever Green Shoppe</b><button class="icon-btn" id="mclose" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
   <a href="#home">Home</a><a href="#shop">All sarees</a><h5>Silk &amp; party wear</h5><a href="#cat-banarasi">Banarasi Silk</a><a href="#cat-banana">Banana Silk</a><a href="#cat-celebrity">Celebrity Inspired</a><a href="#cat-paithani">Paithani Silk</a><a href="#cat-kanchi">Semi Kanchivaram</a><a href="#cat-rainbow">Rainbow Silk</a><a href="#cat-insta">Insta Trending</a><a href="#cat-kerala">Kerala &amp; Tissue</a><a href="#cat-silkcotton">Silk Cotton &amp; Tissue</a><h5>Cotton &amp; daily wear</h5><a href="#cat-mirror">Linen Mirror Work</a><a href="#cat-narayanpeth">Narayanpeth Cotton</a><a href="#cat-jaipur">Jaipur Mal Cotton</a><a href="#cat-linen">Linen Cotton</a><a href="#cat-khadi">Khadi &amp; Handloom</a><a href="#cat-vayal">Fancy Vayal</a><a href="#cat-bandhani">Bandhani</a><a href="#cat-cotton">Cotton Sarees</a><a href="#cat-chudi">Chudi Materials</a>
-  <h5>By price</h5><a href="#price-1">Under ₹700</a><a href="#price-2">₹700 to ₹1,000</a><a href="#price-3">Above ₹1,000</a>
+  <h5>Men’s wear</h5><a href="#mens">Track pants, shirts &amp; T-shirts</a><h5>By price</h5><a href="#price-1">Under ₹700</a><a href="#price-2">₹700 to ₹1,000</a><a href="#price-3">Above ₹1,000</a>
   <h5>Help</h5><a href="#saved">Saved sarees</a><a href="#visit">Visit our store</a><a href="#faq">How to order</a><a href="https://wa.me/917904698007" target="_blank" rel="noopener">WhatsApp +91 79046 98007</a><a href="https://www.instagram.com/evergreenshoppe22/" target="_blank" rel="noopener">Instagram @evergreenshoppe22</a><a href="https://www.facebook.com/evergreenshoppe" target="_blank" rel="noopener">Facebook</a><a href="mailto:evergreensp22@gmail.com">evergreensp22@gmail.com</a></aside>
 
 <main id="view"></main>
@@ -999,7 +1027,7 @@ footer.f4 .fabout img{width:170px;border-radius:14px}
     <div><h4>Talk to us</h4><a href="https://wa.me/917904698007" target="_blank" rel="noopener">WhatsApp +91 79046 98007</a><a href="tel:+917904698007">Call +91 79046 98007</a><a href="mailto:evergreensp22@gmail.com">evergreensp22@gmail.com</a><a href="https://www.instagram.com/evergreenshoppe22/" target="_blank" rel="noopener">Instagram @evergreenshoppe22</a><a href="https://www.facebook.com/evergreenshoppe" target="_blank" rel="noopener">Facebook /evergreenshoppe</a><a href="#visit">Jaihindpuram, Madurai 625011</a><span>Open 24 hours</span></div>
   </div>
   <div class="wrap pop"><h4>Popular searches</h4><div class="tags"><a href="#cat-banarasi">Banarasi tissue silk</a><a href="#cat-banana">Banana silk saree</a><a href="#cat-paithani">Paithani saree</a><a href="#cat-insta">Mirror work saree</a><a href="#cat-narayanpeth">Narayanpeth cotton</a><a href="#cat-vayal">Vayal saree</a><a href="#p-c7">Madurai sungudi</a><a href="#cat-khadi">Khadi office wear</a><a href="#cat-bandhani">Bandhani cotton</a><a href="#p-c14">Nayanthara inspired saree</a><a href="#p-c18">Kopuram cotton</a><a href="#cat-chudi">Chudi material</a><a href="#price-1">Sarees under ₹700</a><a href="#cat-silkcotton">Silk cotton saree</a></div></div>
-  <div class="wrap credit"><span>© 2026 Ever Green Shoppe, Madurai</span><span>Website by shawn webstudio</span></div>
+  <div class="wrap credit"><span>© 2026 Ever Green Shoppe, Madurai</span><span>Temple photo: <a href="https://commons.wikimedia.org/wiki/File:S-TN-34_Meenakshi_Amman_Temple_South_Gopuram_enriched_with_delicate_Stucco_works.jpg" target="_blank" rel="noopener">Madhuranthakan Jagadeesan</a>, CC BY-SA 4.0 · Website by shawn webstudio</span></div>
 </footer>
 
 <a class="fab" id="fab" href="https://wa.me/917904698007" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><span class="tip">Chat with us on WhatsApp</span><svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.6c-2 0-3.9-.5-5.6-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6Zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.8 1.2 3.2 1.4 3.4 2.4 3.6 5.7 5c2.1.9 3 1 4 .8.7-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5-.3-.2-.6-.3Z"/></svg></a>
@@ -1048,7 +1076,7 @@ const CATS = [
   {id:'narayanpeth', name:'Narayanpeth Cotton', ta:'நாராயண்பேட்', blurb:'Pure mercerised cotton with elephant borders and stripe pallus.', cover:'img/wa/t/wa-266.jpg', g:'cotton'},
   {id:'jaipur', name:'Jaipur Mal Cotton', ta:'ஜெய்ப்பூர் காட்டன்', blurb:'Trending white-cream cottons with red peacock motifs and black zari borders.', cover:'img/wa/t/wa-249.jpg', g:'cotton'},
   {id:'linen', name:'Linen Cotton', ta:'லினன் காட்டன்', blurb:'Soft, light linen cotton with unique designs and piping borders.', cover:'img/wa/t/wa-051.jpg', g:'cotton'},
-  {id:'khadi', name:'Khadi & Handloom', ta:'காதி கைத்தறி', blurb:'Pure kaadhi, gini khadi and handloom cottons. Cool, soft and made for regular wear.', cover:'img/c16.jpg', g:'cotton'},
+  {id:'khadi', name:'Khadi & Handloom', ta:'காதி கைத்தறி', blurb:'Khadi, Gini &amp; Handloom Cottons, Cool, Soft &amp; Made For Regular Wear.', cover:'img/c16.jpg', g:'cotton'},
   {id:'vayal', name:'Fancy Vayal', ta:'வாயல் சேலை', blurb:'Budget friendly vayal sarees for office and teachers’ daily wear.', cover:'img/wa/t/wa-311.jpg', g:'cotton'},
   {id:'bandhani', name:'Bandhani', ta:'பந்தனி', blurb:'Tie-dye dots and bold colour on soft cotton.', cover:'img/c6.jpg', g:'cotton'},
   {id:'cotton', name:'Cotton Sarees', ta:'காட்டன் சேலை', blurb:'Sungudi, Kopuram, mul mul and premium soft cottons for daily wear.', cover:'img/c18.jpg', g:'cotton'},
@@ -1094,7 +1122,7 @@ const WB = [
   ['mirror', 650, 'Linen Cotton Mirror Work Saree, Scallop Border', 'Premium · Wear it this Deepavali', 'Premium linen cotton with mirror work all over, for an elegant look when draped. Beautiful scallop border and a contrast striped blouse. Lightweight, soft and easy to drape.', 'Linen cotton', 'Deepavali', null, HW, 61, 69],
   ['banarasi', 1300, 'Banarasi Soft Silk Saree', 'Designer pallu · Designer blouse', 'Banarasi soft silk saree with a designer pallu and a designer blouse.', 'Banarasi soft silk', null, null, DC, 70, 74],
   ['banarasi', 1400, 'Banarasi Soft Silk Saree, Chit Pallu', 'Premium quality', 'Premium quality Banarasi soft silk with a chit pallu and a blouse in the pallu colour.', 'Banarasi soft silk', 'Premium', null, DC, 75, 82],
-  ['khadi', 800, 'Pure Kaadhi Soft Cotton Saree', 'Premium 1st quality · Regular wear', 'Pure khadi soft cotton woven with 100% cotton thread. Cool and soft for regular wear. Comes with a running blouse plus an extra 1 m embroidery blouse.', 'Pure khadi cotton', 'Premium', '6.3 m saree · running blouse + extra 1 m embroidery blouse', HW, 83, 110],
+  ['khadi', 800, 'Pure Khadi Soft Cotton Saree', 'Premium 1st quality · Regular wear', 'Pure khadi soft cotton woven with 100% cotton thread. Cool and soft for regular wear. Comes with a running blouse plus an extra 1 m embroidery blouse.', 'Pure khadi cotton', 'Premium', '6.3 m saree · running blouse + extra 1 m embroidery blouse', HW, 83, 110],
   ['mirror', 800, 'Linen Cotton Mirror Work Saree, Zari Piping', 'Premium · Wear it this Deepavali', 'Premium linen cotton with mirror work all over, a zari piping border and a contrast kalamkari blouse. Lightweight, soft and easy to drape.', 'Linen cotton', 'Deepavali', null, HW, 111, 130],
   ['celebrity', 1300, 'Celebrity Inspired Semi Kanchivaram Silk Saree', 'Party wear · Dry wash only', 'Party wear semi Kanchivaram silk with a designer pallu and a designer blouse.', 'Semi Kanchivaram silk', 'Celebrity look', null, 'Dry wash only', 131, 135],
   ['khadi', 650, 'Gini Khadi Cotton Saree', 'Trending · Premium quality', 'Gini khadi cotton with gorgeous tassel work, a running blouse and an attractive kalamkari printed blouse. Woven from high quality cotton yarn. Very soft, and perfect for summer. Wrapped in tradition, draped in elegance.', 'Gini khadi cotton', 'Trending', 'Running blouse + kalamkari printed blouse', HW, 136, 142],
@@ -1209,9 +1237,9 @@ const uIc = {
   cam: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4Z"/><circle cx="12" cy="13" r="3.5"/></svg>`
 };
 const HB = [
-  {img:'img/hb1.jpg', eb:'Deepavali 2026 · Festive edit', h:'The festive <em>silk</em> edit', p:'Banarasi tissue silks with zari borders that glow under the lamps.', cta:['Shop Banarasi silk', '#cat-banarasi']},
-  {img:'img/hb2.jpg', eb:'Handloom &amp; khadi', h:'Light, easy <em>handloom</em>', p:'Office wear khadi and soft cottons from ₹650, made for long Madurai days.', cta:['Shop khadi', '#cat-khadi']},
-  {img:'img/real/south-gopuram-stucco-wide.jpg', cr:'Photo: Madhuranthakan Jagadeesan, CC BY-SA 4.0', eb:'Jaihindpuram · Madurai', h:'From the city of <em>Meenakshi</em>', p:'Sungudi, silk cotton and our new வாழை நார் பட்டு banana silk, a short ride from the Amman Kovil gopurams. Open 24 hours.', cta:['Shop all sarees', '#shop']}
+  {img:'img/hb1.jpg', eb:'Deepavali 2026 · Festive edit', h:'The festive <em>silk</em> edit', p:'Banarasi Tissue Silks With Zari Borders That Glow Under The Lamps.', cta:['Shop Banarasi silk', '#cat-banarasi']},
+  {img:'img/hb2.jpg', eb:'Handloom &amp; khadi', h:'Light, easy <em>handloom</em>', p:'Office Wear Khadi &amp; Soft Cotton From ₹650, Made For Long Madurai Days.', cta:['Shop khadi', '#cat-khadi']},
+  {img:'img/real/south-gopuram-stucco-wide.jpg', eb:'Jaihindpuram · Madurai', h:'From The City Of <em>Meenakshi Amman</em>', p:'Silk Cotton &amp; Our Exclusive Collection வாழை நார் பட்டு (Banana Silk), A Short Ride From The Amman Kovil Gopurams. Open 24 Hours.', cta:['Shop all sarees', '#shop']}
 ];
 const FAQ = [
   ['How do I place an order?', 'Add sarees to your bag and tap checkout. We fill a WhatsApp message with your order and address, and you just press send. The shop replies to confirm stock.'],
@@ -1280,7 +1308,7 @@ function homeView(){
     <div class="h4t"><h2>Celebrate <em>tradition</em></h2><p>Our exquisite range of sarees for every moment</p></div>
     <div class="promos">
       <a class="promo big rv" href="#cat-banarasi"><img src="img/c21.jpg" alt="" loading="lazy"><span class="pt"><small>Festive favourite</small><b>Banarasi Tissue Silk</b><i>From ${inr(1000)} · Shop now ${arrow}</i></span></a>
-      <a class="promo rv" href="#cat-banana"><img src="img/c20.jpg" alt="" loading="lazy"><span class="pt"><small>New launch</small><b>வாழை நார் பட்டு</b><i>Banana silk · ${inr(1400)} ${arrow}</i></span></a>
+      <a class="promo rv" href="#cat-banana"><img src="img/c20.jpg" alt="" loading="lazy"><span class="pt"><small>Exclusive collection</small><b>வாழை நார் பட்டு</b><i>Banana silk · ${inr(1400)} ${arrow}</i></span></a>
       <a class="promo rv" href="#cat-khadi"><img src="img/c13.jpg" alt="" loading="lazy"><span class="pt"><small>Office wear</small><b>Handloom Khadi</b><i>From ${inr(700)} · Shop now ${arrow}</i></span></a>
     </div>
   </div></section>
@@ -1334,12 +1362,31 @@ function homeView(){
     <div class="faq">${FAQ.map((f, i) => `<details${i ? '' : ' open'}><summary>${f[0]}<i></i></summary><p>${f[1]}</p></details>`).join('')}</div>
   </div></section>
 
+  <section class="s4" id="mens"><div class="wrap">
+    <div class="h4t"><h2>Men’s <em>wear</em></h2><p>Track pants, shirts and T-shirts, now at Ever Green Shoppe</p></div>
+    <div class="mens"><a class="mens-t rv" href="${waLink('Vanakkam! I would like to see your mens track pants.')}" target="_blank" rel="noopener"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M8 3h8l1 18h-4l-1-11-1 11H7z"/><path d="M8 7h8"/></svg></span><b>Track Pants</b><small>Comfortable everyday and gym track pants</small><i>Ask on WhatsApp ${arrow}</i></a><a class="mens-t rv" href="${waLink('Vanakkam! I would like to see your mens shirts.')}" target="_blank" rel="noopener"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M9 3 4 6l2 4 2-1v12h8V9l2 1 2-4-5-3-3 3z"/><path d="M12 6v15"/></svg></span><b>Shirts</b><small>Formal and casual shirts for every day</small><i>Ask on WhatsApp ${arrow}</i></a><a class="mens-t rv" href="${waLink('Vanakkam! I would like to see your mens t-shirts.')}" target="_blank" rel="noopener"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M9 3 3 6l2 4 3-1v12h8V9l3 1 2-4-6-3c0 2-1.3 3-3 3S9 5 9 3z"/></svg></span><b>T-Shirts</b><small>Soft cotton T-shirts in many colours</small><i>Ask on WhatsApp ${arrow}</i></a></div>
+  </div></section>
+
+  <section class="s4"><div class="wrap">
+    <div class="cyos rv"><p class="eyebrow">Ever Green Shoppe</p><h2>Create Your <em>Own Style</em></h2><p>Mix it. Match it. Make it yours.</p><a class="btn btn-gold" href="#shop">Shop the collection ${arrow}</a></div>
+  </div></section>
+
+  <section class="s4 tint" id="social"><div class="wrap">
+    <div class="social">
+      <div class="soc-t"><p class="eyebrow">Instagram</p><h2>Style It. <em>Share It.</em></h2>
+        <p>Follow <a href="https://www.instagram.com/evergreenshoppe22/" target="_blank" rel="noopener">@evergreenshoppe22</a> and share your Evergreen look with</p>
+        <div class="tags2"><span>#EvergreenShoppe</span><span>#CreateYourOwnStyle</span></div>
+        <a class="btn btn-ink" href="https://www.instagram.com/evergreenshoppe22/" target="_blank" rel="noopener">Follow us ${arrow}</a></div>
+      <div class="soc-g"><a class="rv" href="#p-w116"><img src="img/wa/t/wa-121.jpg" alt="" loading="lazy"></a><a class="rv" href="#p-w131"><img src="img/wa/t/wa-131.jpg" alt="" loading="lazy"></a><a class="rv" href="#p-w136"><img src="img/wa/t/wa-136.jpg" alt="" loading="lazy"></a><a class="rv" href="#p-w176"><img src="img/wa/t/wa-176.jpg" alt="" loading="lazy"></a><a class="rv" href="#p-w184"><img src="img/wa/t/wa-184.jpg" alt="" loading="lazy"></a><a class="rv" href="#p-w226"><img src="img/wa/t/wa-226.jpg" alt="" loading="lazy"></a></div>
+    </div>
+  </div></section>
+
   ${visitBlock()}`;
 }
 
 function visitBlock(){
   return `<section class="band" id="visitSec" style="padding-top:0"><div class="wrap">
-    <div class="gopuram rv"><img src="img/real/south-gopuram-stucco-wide.jpg" alt="South gopuram of the Meenakshi Amman Temple, Madurai" loading="lazy"><a class="gp-cr" href="https://commons.wikimedia.org/wiki/File:S-TN-34_Meenakshi_Amman_Temple_South_Gopuram_enriched_with_delicate_Stucco_works.jpg" target="_blank" rel="noopener">Photo: Madhuranthakan Jagadeesan, CC BY-SA 4.0</a><div class="gp-t"><p class="eyebrow">மதுரை · The temple city</p><h2>Rooted in <em>Madurai</em>, under the gopurams</h2><p>Ever Green Shoppe sits in Jaihindpuram, close to the Meenakshi Amman Kovil. Come in, touch the weave and drape it before you buy.</p><div class="cta-row"><a class="btn btn-gold" href="${DIRS}" target="_blank" rel="noopener">Get directions ${arrow}</a></div></div></div>
+    <div class="gopuram rv"><img src="img/real/south-gopuram-stucco-wide.jpg" alt="South gopuram of the Meenakshi Amman Temple, Madurai" loading="lazy"><div class="gp-t"><p class="eyebrow gp-eb">மதுரை · The Temple City</p><h2>Rooted In <em>Madurai</em>, Under The Gopurams</h2><p>Ever Green Shoppe Sits In Jaihindpuram, Close To The Meenakshi Amman Kovil. Come In, Touch The Weave &amp; Drape It Before You Buy.</p><div class="cta-row"><a class="btn btn-gold" href="${DIRS}" target="_blank" rel="noopener">Get directions ${arrow}</a></div></div></div>
     <div class="sec-head"><div><p class="eyebrow">Visit or call</p><h2>Find us in <em>Madurai</em></h2></div></div>
     <div class="visit">
       <div class="map rv"><canvas id="mapc" aria-hidden="true"></canvas>
@@ -1385,6 +1432,7 @@ function productView(id){
       <div><p class="eyebrow">${c.name}</p><h1 style="margin-top:8px">${p.name}</h1><p class="ta" style="margin-top:6px">${c.ta}</p></div>
       <div class="pr"><span class="price">${inr(p.price)}</span></div>
       <p class="desc">${p.desc}</p>
+      <p class="desc desc2">A comfortable and elegant addition to your wardrobe, designed for effortless everyday style. Pair it with your favourite accessories to create your own Evergreen look.</p>
       ${p.colors.length > 1 ? '' : '<!--'}<div class="opt"><h4>Colour: <span id="colName">${p.colors[0][0]}</span></h4><div class="swatches">${p.colors.map((x, i) => `<button data-col="${x[0]}" style="background:${x[1]}" aria-label="${x[0]}" aria-pressed="${i === 0}"></button>`).join('')}</div></div>${p.colors.length > 1 ? '' : '-->'}
       <div class="opt"${hasPrice(p) ? '' : ' hidden'}><h4>Quantity</h4><div class="qty"><button id="qm" aria-label="One less">−</button><output id="qv">1</output><button id="qp" aria-label="One more">+</button></div></div>
       <div class="buy"><button class="btn btn-gold" id="addBtn"${hasPrice(p) ? '' : ' hidden'}>${bagPlus}Add to bag</button><a class="btn btn-wa" id="askBtn" target="_blank" rel="noopener" href="#">${waIcon}Ask on WhatsApp</a></div>
@@ -1466,6 +1514,7 @@ function route(){
   if (h === 'done' && lastOrder) return {v:'done'};
   if (h === 'visit') return {v:'home', nav:'visit', scroll:'visitSec'};
   if (h === 'faq') return {v:'home', nav:'home', scroll:'faq'};
+  if (h === 'mens') return {v:'home', nav:'mens', scroll:'mens'};
   return {v:'home', nav:'home'};
 }
 const titles = {home:'Ever Green Shoppe', list:'Shop', product:'', checkout:'Checkout', done:'Order ready'};
@@ -1644,7 +1693,7 @@ document.getElementById('themeBtn').onclick = () => {
 };
 try { const t = localStorage.getItem('egs-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
 
-document.getElementById('ribbon').innerHTML = Array(2).fill(['Open 24 hours, every day', 'Order on WhatsApp +91 79046 98007', 'New: வாழை நார் பட்டு banana silk', 'Deepavali festive edit is live', 'Store in Madurai'].map(s => `<span>${s}</span>`).join('')).join('');
+document.getElementById('ribbon').innerHTML = Array(2).fill(['Open 24 hours, every day', 'Order on WhatsApp +91 79046 98007', 'Exclusive Collection: வாழை நார் பட்டு (Banana Silk)', 'Deepavali festive edit is live', 'Store in Madurai'].map(s => `<span>${s}</span>`).join('')).join('');
 const prog = document.getElementById('progress');
 addEventListener('scroll', () => { const h = document.documentElement.scrollHeight - innerHeight; prog.style.transform = `scaleX(${h > 0 ? scrollY / h : 0})`; }, {passive:true});
 syncBadges(); renderCart(); render();
